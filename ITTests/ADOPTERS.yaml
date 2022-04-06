@@ -1,0 +1,10 @@
+description: This is a compilation list of the current adopters of the data model ITTests of the Subject IT.
+currentAdopters:
+-
+ adopter: FIWARE Lab Environment
+ description: Open Infrastructure based on OpenStack to facilitate the development of testing services based on FIWARE Technology
+ mail: 
+ organization: FIWARE Foundation, e.V.
+ project:
+ comments: 
+ startDate: 
