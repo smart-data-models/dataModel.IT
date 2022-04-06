@@ -1,0 +1,2 @@
+"id_", "type_", "cloudName_", "contactPoint__telephone_", "contactPoint__contactType_", "version_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "test_"
+"urn:ngsi-ld:CloudRegion:id:Noida", "CloudRegion", "Noida", "+1-401-555-1212", "customer service", "OpenStack Pike", "Point", "9.922458", "109.478534", "urn:ngsi-ld:Tests:Tempest:23278568"
