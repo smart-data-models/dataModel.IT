@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: ITTests  
-===============  
+Entità: ITTest  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.IT/blob/master/ITTests/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questo è il modello di dati per rappresentare il risultato delle procedure di test.  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questo è il modello di dati per rappresentare il risultato delle procedure di test.**  
 versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `component`: Formato dell'identificatore di qualsiasi entità NGSI corrispondente al Software o al componente da testare.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `description`: Una descrizione di questo articolo  - `elapsedTime`: Tempo trascorso dall'inizio dell'esecuzione dei test. Misura in millisecondi la durata dell'esecuzione dei test.  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `status`: Stato complessivo dell'esecuzione dei test: OK, tutti i test sono passati; NOK, c'è almeno qualche test che è fallito; POK, è possibile che alcuni test siano contrassegnati come opzionali, quindi se falliscono lo stato complessivo non è NOK ma POK.  - `tests`: Stato dell'esecuzione di ogni test.  - `timestamp`: EPOCH timestamp misura in millisecondi corrispondente al punto di partenza dell'esecuzione dei test.  - `type`: Tipo di entità NGSI. Deve essere ITTests    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `component[string]`: Formato dell'identificatore di qualsiasi entità NGSI corrispondente al software o al componente da testare.  - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `elapsedTime[number]`: Tempo trascorso dall'inizio dell'esecuzione dei test. Misura in millisecondi la durata dell'esecuzione dei test.  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Stato complessivo dell'esecuzione dei test: OK, tutti i test sono stati superati; NOK, ci sono almeno alcuni test che non sono andati a buon fine; POK, è possibile che alcuni test siano contrassegnati come opzionali, quindi se falliscono lo stato complessivo non è NOK ma POK.  . Model: [https://schema.org/Text](https://schema.org/Text)- `tests[array]`: Stato dell'esecuzione di ciascun test.  . Model: [https://schema.org/Text](https://schema.org/Text)- `timestamp[number]`: Il timestamp EPOCH misura in millisecondi il punto di inizio dell'esecuzione dei test.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Tipo di entità NGSI. Deve essere ITTest  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `id`  - `type`  ## Descrizione del modello di dati delle proprietà  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 ITTests:    
@@ -345,9 +359,14 @@ ITTests:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
-#### ITTests NGSI-v2 valori chiave Esempio  
-Ecco un esempio di un ITTests in formato JSON-LD come key-values. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
+#### ITTest NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di ITTest in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Tests:Tempest:23278568",  
@@ -376,8 +395,10 @@ ITTests:
   ]  
 }  
 ```  
-#### ITTests NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un ITTests in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### ITTest NGSI-v2 normalizzati Esempio  
+Ecco un esempio di ITTest in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si usano le opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Tests:Tempest:23278568",  
@@ -421,85 +442,99 @@ ITTests:
   }  
 }  
 ```  
-#### ITTests NGSI-LD valori-chiave Esempio  
-Ecco un esempio di un ITTests in formato JSON-LD come key-values. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### ITTest Valori chiave NGSI-LD Esempio  
+Ecco un esempio di ITTest in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:Tests:Tempest:23278568",  
-  "type": "ITTests",  
-  "status": "OK",  
-  "timestamp": 1645543927345,  
-  "elapsedTime": 1344875,  
-  "component": "urn:ngsi-ld:CloudRegion:Noida",  
-  "tests": [  
-    {  
-      "name": "test_allocate_ip",  
-      "result": "OK"  
-    },  
-    {  
-      "name": "test_allocate_ip",  
-      "result": "OK"  
-    },  
-    {  
-      "name": "test_object_storage",  
-      "result": "NA"  
-    },  
-    {  
-      "name": "test_associate_io",  
-      "result": "DISMISS"  
-    }  
-  ],  
-  "@context": [  
-    "https://smart-data-models.github.com/dataModel.IT/context.jsonld"  
-  ]  
-}  
-```  
-#### ITTests NGSI-LD normalizzato Esempio  
-Ecco un esempio di un ITTests in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
-```json  
-{  
-  "id": "urn:ngsi-ld:Tests:Tempest:23278568",  
-  "type": "ITTests",  
-  "status": {  
-    "type": "Property",  
-    "value": "OK"  
-  },  
-  "timestamp": {  
-    "type": "Property",  
-    "value": 1645543927345  
-  },  
-  "elapsedTime": {  
-    "type": "Property",  
-    "value": 1344875  
-  },  
-  "component": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:CloudRegion:Noida"  
-  },  
-  "tests": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "name": "test_allocate_ip",  
-        "result": "OK"  
-      },  
-      {  
-        "name": "test_object_storage",  
-        "result": "NA"  
-      },  
-      {  
-        "name": "test_associate_ip",  
-        "result": "DISMISS"  
-      },  
-      {  
-        "name": "test_deploy_server",  
-        "result": "NOK"  
-      }  
+    "id": "urn:ngsi-ld:Tests:Tempest:23278568",  
+    "type": "ITTests",  
+    "status": "OK",  
+    "timestamp": 1645543927345,  
+    "elapsedTime": 1344875,  
+    "component": "urn:ngsi-ld:CloudRegion:Noida",  
+    "tests": [  
+        {  
+            "name": "test_allocate_ip",  
+            "result": "OK"  
+        },  
+        {  
+            "name": "test_allocate_ip",  
+            "result": "OK"  
+        },  
+        {  
+            "name": "test_object_storage",  
+            "result": "NA"  
+        },  
+        {  
+            "name": "test_associate_io",  
+            "result": "DISMISS"  
+        }  
+    ],  
+    "@context": [  
+        "https://smart-data-models.github.com/dataModel.IT/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.IT/master/context.jsonld"  
     ]  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.com/dataModel.IT/context.jsonld"  
-  ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details>  
+#### ITTest NGSI-LD normalizzati Esempio  
+Ecco un esempio di ITTest in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:Tests:Tempest:23278568",  
+    "type": "ITTests",  
+    "status": {  
+        "type": "Property",  
+        "value": "OK"  
+    },  
+    "timestamp": {  
+        "type": "Property",  
+        "value": 1645543927345  
+    },  
+    "elapsedTime": {  
+        "type": "Property",  
+        "value": 1344875  
+    },  
+    "component": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:CloudRegion:Noida"  
+    },  
+    "tests": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "name": "test_allocate_ip",  
+                "result": "OK"  
+            },  
+            {  
+                "name": "test_object_storage",  
+                "result": "NA"  
+            },  
+            {  
+                "name": "test_associate_ip",  
+                "result": "DISMISS"  
+            },  
+            {  
+                "name": "test_deploy_server",  
+                "result": "NOK"  
+            }  
+        ]  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.com/dataModel.IT/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.IT/master/context.jsonld"  
+    ]  
+}  
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
