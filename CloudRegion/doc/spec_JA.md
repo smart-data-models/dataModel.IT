@@ -1,17 +1,31 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティCloudRegion  
-=================  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.IT/blob/master/CloudRegion/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**クラウド領域の説明(**)  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `cloudName`: 対応する地域に割り当てられている名称。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへのGeojsonリファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pointsOfContact`: クラウド領域の問い合わせ先一覧  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで指定する文字の列。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `test`: 実行されたテストの識別。  - `type`: NGSI エンティティタイプ。これはCloudRegionでなければなりません。  - `version`: 対応するクラウドバージョンのリージョン。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `cloudName[string]`: 対応する地域に割り当てられている名称。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `pointsOfContact[array]`: クラウド領域の問い合わせ先一覧  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `test[string]`: 実行されたテストの識別。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entityタイプ。これはCloudRegionでなければなりません。  - `version[string]`: 対応するクラウドバージョンのリージョン。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `id`  - `type`  ## プロパティのデータモデル記述  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CloudRegion:    
@@ -338,9 +352,14 @@ CloudRegion:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### CloudRegion NGSI-v2 key-value の例。  
-CloudRegionをJSON-LD形式でkey-valueとした例である。これは `options=keyValues` を使った場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+以下はCloudRegionをJSON-LD形式でkey-valuesにした例である。これは `options=keyValues` を使った場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CloudRegion:id:Noida",  
@@ -361,8 +380,10 @@ CloudRegion:
   "test": "urn:ngsi-ld:Tests:Tempest:23278568"  
 }  
 ```  
+</details>  
 #### CloudRegion NGSI-v2 正規化例  
-以下は、CloudRegionをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、CloudRegionをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CloudRegion:id:Noida",  
@@ -411,84 +432,98 @@ CloudRegion:
   }  
 }  
 ```  
-#### CloudRegion NGSI-LD key-value の例  
-CloudRegionをJSON-LD形式でkey-valueとした例である。これは `options=keyValues` を使った場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+</details>  
+#### CloudRegion NGSI-LD キー値の例  
+CloudRegionをJSON-LD形式でkey-valuesにした例です。これは `options=keyValues` を使った場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CloudRegion:id:Noida",  
-  "type": "CloudRegion",  
-  "cloudName": "Noida",  
-  "pointsOfContact": [  
-    {  
-      "telephone": "+1-401-555-1212",  
-      "contactType": "customer service"  
-    }  
-  ],  
-  "version": "OpenStack Pike",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      9.922458,  
-      109.478534  
+    "id": "urn:ngsi-ld:CloudRegion:id:Noida",  
+    "type": "CloudRegion",  
+    "cloudName": "Noida",  
+    "pointsOfContact": [  
+        {  
+            "telephone": "+1-401-555-1212",  
+            "contactType": "customer service"  
+        }  
+    ],  
+    "version": "OpenStack Pike",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            9.922458,  
+            109.478534  
+        ]  
+    },  
+    "test": "urn:ngsi-ld:Tests:Tempest:23278568",  
+    "@context": [  
+        "https://smart-data-models.github.com/dataModel.IT/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.IT/master/context.jsonld"  
     ]  
-  },  
-  "test": "urn:ngsi-ld:Tests:Tempest:23278568",  
-  "@context": [  
-    "https://smart-data-models.github.com/dataModel.IT/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### CloudRegion NGSI-LD 正規化例  
-以下は、CloudRegionをJSON-LD形式で正規化した例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+以下は、CloudRegionを正規化したJSON-LD形式の例である。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CloudRegion:id:Noida",  
-  "type": "CloudRegion",  
-  "cloudName": {  
-    "type": "Property",  
-    "value": "Noida"  
-  },  
-  "contactPoint": {  
-    "type": "Property",  
-    "value": [  
-      {  
-        "email": "theron31@quigley.net"  
-      },  
-      {  
-        "email": "qhuel@gmailo.com"  
-      },  
-      {  
-        "email": "tania88@pfeffer.com"  
-      },  
-      {  
-        "email": "salvador.jacobson@hotmalil.com"  
-      },  
-      {  
-        "email": "uriel08@blick.com"  
-      }  
+    "id": "urn:ngsi-ld:CloudRegion:id:Noida",  
+    "type": "CloudRegion",  
+    "cloudName": {  
+        "type": "Property",  
+        "value": "Noida"  
+    },  
+    "contactPoint": {  
+        "type": "Property",  
+        "value": [  
+            {  
+                "email": "theron31@quigley.net"  
+            },  
+            {  
+                "email": "qhuel@gmailo.com"  
+            },  
+            {  
+                "email": "tania88@pfeffer.com"  
+            },  
+            {  
+                "email": "salvador.jacobson@hotmalil.com"  
+            },  
+            {  
+                "email": "uriel08@blick.com"  
+            }  
+        ]  
+    },  
+    "version": {  
+        "type": "Property",  
+        "value": "OpenStack Pike"  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                22.1394715,  
+                -7.100602  
+            ]  
+        }  
+    },  
+    "test": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:Tests:Tempest:23278568"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.com/dataModel.IT/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.IT/master/context.jsonld"  
     ]  
-  },  
-  "version": {  
-    "type": "Property",  
-    "value": "OpenStack Pike"  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        22.1394715,  
-        -7.100602  
-      ]  
-    }  
-  },  
-  "test": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:Tests:Tempest:23278568"  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.com/dataModel.IT/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
