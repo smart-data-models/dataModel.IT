@@ -1,5 +1,7 @@
 {
     "@context": {
+        "CloudRegion": "https://smartdatamodels.org/dataModel.IT/CloudRegion",
+        "ITTests": "https://smartdatamodels.org/dataModel.IT/ITTests",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
