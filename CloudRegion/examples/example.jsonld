@@ -1,24 +1,35 @@
 {
-    "id": "urn:ngsi-ld:CloudRegion:id:Noida",
-    "type": "CloudRegion",
-    "cloudName": "Noida",
-    "pointsOfContact": [
-        {
-            "telephone": "+1-401-555-1212",
-            "contactType": "customer service"
-        }
-    ],
-    "version": "OpenStack Pike",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            9.922458,
-            109.478534
-        ]
+  "id": "urn:ngsi-ld:CloudRegion:id:Noida",
+  "type": "CloudRegion",
+  "cloudName": "Noida",
+  "pointsOfContact": [
+    {
+      "email": "theron31@quigley.net"
     },
-    "test": "urn:ngsi-ld:Tests:Tempest:23278568",
-    "@context": [
-        "https://smart-data-models.github.com/dataModel.IT/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.IT/master/context.jsonld"
+    {
+      "email": "qhuel@gmailo.com"
+    },
+    {
+      "email": "tania88@pfeffer.com"
+    },
+    {
+      "email": "salvador.jacobson@hotmalil.com"
+    },
+    {
+      "email": "uriel08@blick.com"
+    }
+  ],
+  "version": "OpenStack Pike",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      9.922458,
+      109.478534
     ]
+  },
+  "test": "urn:ngsi-ld:Tests:Tempest:23278568",
+  "@context": [
+    "https://smart-data-models.github.com/dataModel.IT/context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.IT/master/context.jsonld"
+  ]
 }
