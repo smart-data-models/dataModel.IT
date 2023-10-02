@@ -1,3 +1,3 @@
-/* (Beta) Export of data model CloudRegion of the subject dataModel.IT for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model CloudRegion of the subject dataModel.IT for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE CloudRegion_type AS ENUM ('CloudRegion');
-CREATE TABLE CloudRegion (address json, alternateName text, areaServed text, cloudName text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, pointsOfContact json, seeAlso json, source text, test text, type CloudRegion_type, version text);
+CREATE TABLE CloudRegion (address JSON, alternateName TEXT, areaServed TEXT, cloudName TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, pointsOfContact JSON, source TEXT, test TEXT, type CloudRegion_type, version TEXT);
