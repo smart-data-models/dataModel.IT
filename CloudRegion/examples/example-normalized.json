@@ -6,7 +6,7 @@
     "value": "Noida"
   },
   "pointsOfContact": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       {
         "email": "theron31@quigley.net"
