@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "ITTests"
 subject = "dataModel.IT"
-status = "{'type': 'Property', 'value': 'OK'}"
+status = "OK"
 attribute = "status"
 value = status
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-timestamp = {'type': 'Property', 'value': 1645543927345}
+timestamp = 1645543927345
 attribute = "timestamp"
 value = timestamp
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-elapsedTime = {'type': 'Property', 'value': 1344875}
+elapsedTime = 1344875
 attribute = "elapsedTime"
 value = elapsedTime
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-component = "{'type': 'Relationship', 'value': 'urn:ngsi-ld:CloudRegion:Noida'}"
+component = "urn:ngsi-ld:CloudRegion:Noida"
 attribute = "component"
 value = component
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
