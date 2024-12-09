@@ -1,2 +1,2 @@
-"id_", "type_", "cloudName_", "contactPoint__telephone_", "contactPoint__contactType_", "version_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "test_"
-"urn:ngsi-ld:CloudRegion:id:Noida", "CloudRegion", "Noida", "+1-401-555-1212", "customer service", "OpenStack Pike", "Point", "9.922458", "109.478534", "urn:ngsi-ld:Tests:Tempest:23278568"
+"id_", "type_", "cloudName_", "pointsOfContact__0__email_", "pointsOfContact__1__email_", "pointsOfContact__2__email_", "pointsOfContact__3__email_", "pointsOfContact__4__email_", "version_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "test_"
+"urn:ngsi-ld:CloudRegion:id:Noida", "CloudRegion", "Noida", "theron31@quigley.net", "qhuel@gmailo.com", "tania88@pfeffer.com", "salvador.jacobson@hotmalil.com", "uriel08@blick.com", "OpenStack Pike", "Point", "9.922458", "109.478534", "urn:ngsi-ld:Tests:Tempest:23278568"

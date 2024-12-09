@@ -1,34 +1,35 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-Entity: CloudRegion    
-===================<!-- /10-Header -->    
+엔티티: CloudRegion    
+================<!-- /10-Header -->    
 <!-- 15-License -->    
-[Open License](https://github.com/smart-data-models//dataModel.IT/blob/master/CloudRegion/LICENSE.md)    
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[오픈 라이선스](https://github.com/smart-data-models//dataModel.IT/blob/master/CloudRegion/LICENSE.md)    
+[문서 자동 생성](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-Global description: **Cloud region description.**    
-version: 0.0.1    
+글로벌 설명: **클라우드 지역 설명: **클라우드 지역 설명    
+버전: 0.0.1    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## List of properties    
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>    
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government      
-	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `cloudName[string]`: Name assigned to the corresponding region  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `pointsOfContact[array]`: List of contact points of the cloud region  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `test[uri]`: Identification of the tests executed  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity type. It has to be CloudRegion  - `version[string]`: Corresponding Cloud version of the region  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->    
+## 속성 목록    
+<sup><sub>[*] 속성에 유형이 없는 것은 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>.    
+- `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 도로명 주소가 있는 지역 및 해당 지역에 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: 해당 지역이 위치한 지역과 해당 국가의 지역  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 지구는 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 일종입니다.      
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호입니다. 예: 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 거리 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+	- `streetNr[string]`: 공공 도로의 특정 건물을 식별하는 번호      
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `cloudName[string]`: 해당 지역에 할당된 이름  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 공급자를 식별하는 일련의 문자  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 스토리지 플랫폼에서 할당합니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 지오숀 참조입니다. 포인트, 라인 문자열, 다각형, 멀티포인트, 멀티라인 문자열 또는 멀티폴리곤일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스가 포함된 목록입니다.  - `pointsOfContact[array]`: 클라우드 리전의 연락 지점 목록  - `seeAlso[*]`: 항목에 대한 추가 리소스를 가리키는 URL 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스입니다. 소스 공급자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 사용하는 것이 좋습니다.  - `test[uri]`: 실행된 테스트 식별  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI 엔티티 유형. CloudRegion이어야 합니다.  - `version[string]`: 해당 지역의 클라우드 버전  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-Required properties    
+필수 속성    
 - `id`  - `type`  <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## Data Model description of properties    
-Sorted alphabetically (click for details)    
+## 속성에 대한 데이터 모델 설명    
+알파벳순으로 정렬(자세한 내용을 보려면 클릭)    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
@@ -489,9 +490,9 @@ CloudRegion:
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## Example payloads      
-#### CloudRegion NGSI-v2 key-values Example      
-Here is an example of a CloudRegion in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.    
+## 페이로드 예시    
+#### CloudRegion NGSI-v2 키-값 예시    
+다음은 키-값으로 JSON-LD 형식의 CloudRegion의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -527,8 +528,8 @@ CloudRegion:
 }  
 ```  
 </details>    
-#### CloudRegion NGSI-v2 normalized Example      
-Here is an example of a CloudRegion in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.    
+#### CloudRegion NGSI-v2 정규화 예제    
+다음은 정규화된 JSON-LD 형식의 CloudRegion의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -579,8 +580,8 @@ CloudRegion:
 }  
 ```  
 </details>    
-#### CloudRegion NGSI-LD key-values Example      
-Here is an example of a CloudRegion in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.    
+#### CloudRegion NGSI-LD 키-값 예시    
+다음은 키-값으로 JSON-LD 형식의 CloudRegion의 예입니다. 이는 `옵션=키값`을 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -620,8 +621,8 @@ CloudRegion:
 }  
 ```  
 </details>    
-#### CloudRegion NGSI-LD normalized Example      
-Here is an example of a CloudRegion in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.    
+#### CloudRegion NGSI-LD 정규화 예제    
+다음은 정규화된 JSON-LD 형식의 CloudRegion의 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -679,7 +680,7 @@ CloudRegion:
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units    
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하여 규모 단위를 다루는 방법에 대한 답변을 확인하세요.    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

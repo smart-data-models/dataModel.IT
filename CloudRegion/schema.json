@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
   "$id": "https://smart-data-models.github.io/dataModel.IT/CloudRegion/schema.json",
   "title": "Smart Data models - CloudRegion schema",
@@ -21,7 +21,7 @@
     },
     {
       "properties": {
-         "type": {
+        "type": {
           "type": "string",
           "description": "Property. NGSI Entity type. It has to be CloudRegion",
           "enum": [
@@ -30,23 +30,23 @@
         },
         "cloudName": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Name assigned to the corresponding region."
+          "description": "Property. Model:'https://schema.org/Text'. Name assigned to the corresponding region"
         },
         "pointsOfContact": {
           "type": "array",
           "description": "Property. List of contact points of the cloud region",
           "items": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons/properties/contactPoint"
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons/properties/contactPoint"
           }
         },
         "version": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Corresponding Cloud version of the region."
+          "description": "Property. Model:'https://schema.org/Text'. Corresponding Cloud version of the region"
         },
         "test": {
           "type": "string",
           "format": "uri",
-          "description": "Relationship. Model:'https://schema.org/Text'. Identification of the tests executed."
+          "description": "Relationship. Model:'https://schema.org/Text'. Identification of the tests executed"
         }
       }
     }

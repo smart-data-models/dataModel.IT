@@ -14,11 +14,11 @@
     "value": 1344875
   },
   "component": {
-    "type": "uri",
+    "type": "Text",
     "value": "urn:ngsi-ld:CloudRegion:Noida"
   },
   "tests": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       {
         "name": "test_allocate_ip",

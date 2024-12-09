@@ -1,0 +1,3 @@
+/* (Beta) Export of data model CloudRegion of the subject dataModel.IT for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE CloudRegion_type AS ENUM ('CloudRegion');
+CREATE TABLE CloudRegion (address JSON, alternateName TEXT, areaServed TEXT, cloudName TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, pointsOfContact JSON, seeAlso JSON, source TEXT, test TEXT, type CloudRegion_type, version TEXT);
