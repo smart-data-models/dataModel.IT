@@ -1,0 +1,34 @@
+{
+  "id": "urn:ngsi-ld:Domain:UPV",
+  "type": "Domain",
+  "description": {
+    "type": "Property",
+    "value": "This is an example domain of the continuum managed by UPV"
+  },
+  "publicUrl": {
+    "type": "Property",
+    "value": "https://upv-domain.aeros-project.eu"
+  },
+  "owner": {
+    "type": "Relationship",
+    "object": [
+      "urn:ngsi-ld:Organization:UPV",
+      "urn:ngsi-ld:Organization:University"
+    ]
+  },
+  "isEntrypoint": {
+    "type": "Property",
+    "value": true
+  },
+  "domainStatus": {
+    "type": "Property",
+    "value": "Preliminary"
+  },
+  "publicKey": {
+    "type": "Property",
+    "value": "k8hAPelai4z1wBfyJO5cDUJutyuW10kOh5ezeh7p7SE="
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld"
+  ]
+}

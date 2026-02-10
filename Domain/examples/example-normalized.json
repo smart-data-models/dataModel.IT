@@ -1,0 +1,31 @@
+{
+  "id": "Domain:UPV",
+  "type": "Domain",
+  "description": {
+    "type": "Text",
+    "value": "This is an example domain of the continuum managed by UPV"
+  },
+  "publicUrl": {
+    "type": "Property",
+    "value": "https://upv-domain.aeros-project.eu"
+  },
+  "owner": {
+    "type": "Relationship",
+    "value": [
+      "Organization:UPV",
+      "Organization:University"
+    ]
+  },
+  "isEntrypoint": {
+    "type": "Boolean",
+    "value": true
+  },
+  "domainStatus": {
+    "type": "Text",
+    "value": "Preliminary"
+  },
+  "publicKey": {
+    "type": "Text",
+    "value": "k8hAPelai4z1wBfyJO5cDUJutyuW10kOh5ezeh7p7SE="
+  }
+}
