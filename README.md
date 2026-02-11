@@ -9,10 +9,12 @@ The following entity types are available:
 
 - [Domain](https://github.com/smart-data-models/dataModel.IT/blob/master/Domain/README.md). Domain of the Cloud-Edge-IoT computing continuum, which is composed of a set of InfrastructureElements
 
+- [InfrastructureElement](https://github.com/smart-data-models/dataModel.IT/blob/master/InfrastructureElement/README.md). An Infrastructure Element (IE) is a computing node of the Cloud-Edge-IoT computing continuum that can run different ServiceComponents.
+
 - [ITTests](https://github.com/smart-data-models/dataModel.IT/blob/master/ITTests/README.md). This is the data model for representing the result of testing procedures.
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.IT/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors.
+[Link](https://github.com/smart-data-models/dataModel.IT/blob/master/CONTRIBUTORS.yaml) to the 7 current contributors.
 
 ### Contribution
 You can raise an [issue](https://github.com/smart-data-models/dataModel.IT/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.IT/pulls) on existing data models.
