@@ -1,0 +1,2 @@
+"id_", "type_", "description_", "publicUrl_", "owner__0_", "owner__1_", "isEntrypoint_", "domainStatus_", "publicKey_", "@context__0_"
+"urn:ngsi-ld:Domain:UPV", "Domain", "This is an example domain of the continuum managed by UPV", "https://upv-domain.aeros-project.eu", "urn:ngsi-ld:Organization:UPV", "urn:ngsi-ld:Organization:University", "True", "Preliminary", "k8hAPelai4z1wBfyJO5cDUJutyuW10kOh5ezeh7p7SE=", "https://smartdatamodels.org/context.jsonld"
