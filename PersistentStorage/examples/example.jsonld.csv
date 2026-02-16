@@ -1,0 +1,2 @@
+"id_", "type_", "mountPath_", "storageType_", "hostPath_", "accessMode_", "size_", "@context__0_"
+"urn:ngsi-ld:Service:WebApp01:Component:Db:PersistentStorage:01", "PersistentStorage", "/data/db", "Local", "/var/mongo-persistence/data/db", "ReadWriteOnce", "2048", "https://smartdatamodels.org/context.jsonld"

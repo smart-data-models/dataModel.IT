@@ -1,0 +1,2 @@
+"id_", "type_", "mountPath__type_", "mountPath__value_", "storageType__type_", "storageType__value_", "hostPath__type_", "hostPath__value_", "accessMode__type_", "accessMode__value_", "size__type_", "size__value_"
+"Service:WebApp01:Component:Db:PersistentStorage:01", "PersistentStorage", "Property", "/data/db", "Property", "Local", "Property", "/var/mongo-persistence/data/db", "Property", "ReadWriteOnce", "Property", "2048"

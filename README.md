@@ -21,7 +21,7 @@ The following entity types are available:
 
 - [NetworkPort](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkPort/README.md). .
 
-- [PersistentStorage](https://github.com/smart-data-models/dataModel.IT/blob/master/PersistentStorage/README.md). .
+- [PersistentStorage](https://github.com/smart-data-models/dataModel.IT/blob/master/PersistentStorage/README.md). Persistent storage requested by a ServiceComponent.
 
 - [PowerSource](https://github.com/smart-data-models/dataModel.IT/blob/master/PowerSource/README.md). .
 
