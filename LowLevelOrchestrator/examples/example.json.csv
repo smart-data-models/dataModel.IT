@@ -1,0 +1,2 @@
+"id_", "type_", "domain_", "orchestrationType_"
+"LowLevelOrchestrator:Cloud:Kubernetes", "LowLevelOrchestrator", "Domain:Cloud", "Kubernetes"
