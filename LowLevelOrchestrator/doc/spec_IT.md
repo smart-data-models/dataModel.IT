@@ -17,7 +17,7 @@ Entità: LowLevelOrchestrator
 <!-- 20-Description -->
   
 
-Global description: **Un Orchestratore di basso livello del dominio, che è associato a un tipo di orchestrazione univoco (ad esempio Kubernetes, Docker, containerd, ecc.).**  
+Global description: **Un orchestratore di basso livello del dominio, che è associato a un tipo di orchestrazione univoco (ad esempio Kubernetes, Docker, containerd, ecc.).**  
 
 version: 0.0.1  
 <!-- /20-Description -->
@@ -40,15 +40,15 @@ version: 0.0.1
 	- `streetAddress[string]`: L'indirizzo di via  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: Numero che identifica una proprietà specifica in una strada pubblica  
 - `alternateName[string]`: Un nome alternativo per questo elemento  
-- `areaServed[string]`: L'area geografica in cui un servizio o un articolo offerto viene fornito  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `areaServed[string]`: L'area geografica in cui viene fornito un servizio o un articolo offerto  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzati  
 - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Questo verrà solitamente assegnato dalla piattaforma di archiviazione  
-- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Questo verrà solitamente assegnato dalla piattaforma di archiviazione  
-- `description[string]`: Una descrizione di questo elemento  
-- `domain[string]`: Dominio a cui appartiene l'Orchestratore di basso livello.  
+- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Questo sarà solitamente assegnato dalla piattaforma di archiviazione  
+- `description[string]`: Una descrizione di questo articolo  
+- `domain[string]`: Dominio al quale appartiene l'Orchestratore di basso livello.  
 - `id[*]`: Identificatore univoco dell'entità  
 - `location[*]`: Riferimento Geojson all'elemento. Può essere Punto, LineString, Poligono, MultiPunto, MultiLineString o MultiPoligono  
-- `name[string]`: Il nome di questo articolo  
+- `name[string]`: Il nome di questo elemento  
 - `orchestrationType[string]`: Enum: 'Kubernetes, Docker, containerd, Podman, iSulad'. Tipo di orchestrazione dell'Orchestratore di basso livello, che di solito è un framework di gestione dei contenitori.  
 - `owner[array]`: Una lista che contiene una sequenza di caratteri codificata in JSON che fa riferimento agli Id univoci del/dei proprietario/i  
 - `seeAlso[*]`: Elenco di uri che puntano a risorse aggiuntive sull'elemento  
@@ -60,16 +60,16 @@ version: 0.0.1
   
 
 Proprietà richieste  
-- `dominio`  
+- `domain`  
 - `id`  
-- `tipo di orchestrazione`  
-- `tipo`  
+- `orchestrationType`  
+- `type`  
 <!-- /35-RequiredProperties -->
   
 <!-- 40-NotesYaml -->
   
 
-note che appaiono all'inizio della specifica  
+Note apparse all'inizio della specifica  
 <!-- /40-NotesYaml -->
   
 <!-- 50-DataModelHeader -->
@@ -77,7 +77,7 @@ note che appaiono all'inizio della specifica
 
 ## Descrizione del modello di dati delle proprietà  
 
-Ordinati alfabeticamente (clicca per i dettagli)  
+In ordine alfabetico (clicca per i dettagli)  
 <!-- /50-DataModelHeader -->
   
 <!-- 60-ModelYaml -->
@@ -481,11 +481,11 @@ Note apparse a metà della specifica
 <!-- 80-Examples -->
   
 
-## Esempi di payload  
+## Payload di esempio  
 
 #### LowLevelOrchestrator esempio di valori chiave NGSI-v2  
 
-Ecco un esempio di LowLevelOrchestrator in formato JSON come chiavi-valori. Ciò è compatibile con NGSI-v2 quando si utilizza `options=keyValues` e restituisce i dati di contesto di un'entità individuale.  
+Ecco un esempio di LowLevelOrchestrator in formato JSON come chiavi-valori. Questo è compatibile con NGSI-v2 quando si utilizza `options=keyValues` e restituisce i dati di contesto di un'entità individuale.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -499,9 +499,9 @@ Ecco un esempio di LowLevelOrchestrator in formato JSON come chiavi-valori. Ciò
 ```  
 </details>  
 
-#### LowLevelOrchestrator NGSI-v2 esempio normalizzato  
+#### LowLevelOrchestrator NGSI-v2 normalizzato Esempio  
 
-Ecco un esempio di LowLevelOrchestrator in formato JSON come normalizzato, compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di un'entità individuale.  
+Ecco un esempio di LowLevelOrchestrator in formato JSON come normalizzato. Ciò è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di un'entità individuale.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -544,7 +544,7 @@ Ecco un esempio di LowLevelOrchestrator in formato JSON-LD come chiavi-valori. C
 ```  
 </details>  
 
-#### LowLevelOrchestrator NGSI-LD normalizzato Esempio  
+#### LowLevelOrchestrator esempio normalizzato NGSI-LD  
 
 Ecco un esempio di LowLevelOrchestrator in formato JSON-LD come normalizzato, compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di un'entità individuale.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -576,7 +576,7 @@ Ecco un esempio di LowLevelOrchestrator in formato JSON-LD come normalizzato, co
 <!-- 90-FooterNotes -->
   
 
-Note apparse nel piè di pagina della specifica  
+note che appaiono nel piè di pagina della specifica  
 <!-- /90-FooterNotes -->
   
 <!-- 95-Units -->
