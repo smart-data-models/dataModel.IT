@@ -11,13 +11,13 @@
 
 [开放许可证](https://github.com/smart-data-models//dataModel.IT/blob/master/LowLevelOrchestrator/LICENSE.md)  
 
-[自动生成文档](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[自动生成的文档](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->
   
 <!-- 20-Description -->
   
 
-Global description: **域的低级别编排器，它与一种唯一的编排类型相关联（例如，Kubernetes、Docker、containerd等）。**  
+Global description: **域的低级编排器，与一个唯一的编排类型相关联（例如，Kubernetes，Docker，containerd等）。**  
 
 version: 0.0.1  
 <!-- /20-Description -->
@@ -31,39 +31,39 @@ version: 0.0.1
 
 <sup><sub>[*] 如果一个属性中没有指定类型，那是因为它可能有多种类型或不同的格式/模式</sub></sup>  
 - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)  
-	- `addressCountry[string]`: 该国。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressCountry[string]`: 这个国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
 	- `addressLocality[string]`: 该街道地址所在的地区，以及该地区所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: 该地所在的地区，也是位于该国的地区  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `addressRegion[string]`: 该地区的地点所在，并且在该国  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
 	- `district[string]`: 区是某些国家的一种行政区划，由当地政府管理  
 	- `postOfficeBoxNumber[string]`: 邮政信箱的邮政信箱编号。例如，03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: 邮政编码。例如，24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: 公共街道上特定房产的编号  
 - `alternateName[string]`: 该物品的另一个名称  
-- `areaServed[string]`: 提供服务或商品的地域范围  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `areaServed[string]`: 提供服务或项目的地域范围  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: 识别和谐数据实体提供者的字符序列  
 - `dateCreated[date-time]`: 实体创建时间戳。这通常由存储平台分配  
-- `dateModified[date-time]`: 实体最后一次修改的时间戳。这通常由存储平台分配  
-- `description[string]`: 该物品的描述  
+- `dateModified[date-time]`: 实体最后修改的时间戳。这通常由存储平台分配  
+- `description[string]`: 对此项的描述  
 - `domain[string]`: 低级编排器所属的域。  
 - `id[*]`: 实体的唯一标识符  
-- `location[*]`: GeoJSON引用该项目的内容，可以是Point、LineString、Polygon、MultiPoint、MultiLineString或MultiPolygon  
+- `location[*]`: GeoJSON引用该项目的内容。它可以是Point、LineString、Polygon、MultiPoint、MultiLineString或MultiPolygon  
 - `name[string]`: 该物品的名称  
 - `orchestrationType[string]`: 枚举：'Kubernetes, Docker, containerd, Podman, iSulad'。低级编排器的编排类型，它通常是一个容器管理框架。  
-- `owner[array]`: 包含一个JSON编码的序列的列表，该序列引用了所有者（们）的唯一Id  
-- `seeAlso[*]`: 关于该项目的其他资源的URI列表  
-- `source[string]`: 一个字符序列，给出实体数据的原始来源作为URL。建议为源提供者的全限定域名，或源对象的URL。  
+- `owner[array]`: 包含一个JSON编码的字符序列，引用所有者（们）的唯一Id的列表  
+- `seeAlso[*]`: 关于该项目的附加资源的URI列表  
+- `source[string]`: 一个字符序列，提供实体数据的原始来源作为URL。建议使用源提供者的完全限定域名，或源对象的URL。  
 - `type[string]`: NGSI 实体类型。它必须是 LowLevelOrchestrator  
 <!-- /30-PropertiesList -->
   
 <!-- 35-RequiredProperties -->
   
 
-所需属性  
-- `域`  
+必需属性  
+- `domain`  
 - `id`  
-- `orchestrationType`  编排类型  
-- `类型`  
+- `orchestrationType`  
+- `type`  
 <!-- /35-RequiredProperties -->
   
 <!-- 40-NotesYaml -->
@@ -77,7 +77,7 @@ version: 0.0.1
 
 ## 数据模型属性描述  
 
-按字母顺序排列（点击查看详情）  
+按字母顺序排序（点击查看详细信息）  
 <!-- /50-DataModelHeader -->
   
 <!-- 60-ModelYaml -->
@@ -483,9 +483,9 @@ LowLevelOrchestrator:
 
 ## 示例有效载荷  
 
-#### 低级编排器 NGSI-v2 键值示例  
+#### 低级管弦乐队NGSI-v2键值示例  
 
-这是一个低级编排器的JSON格式示例，以键值对的形式给出。当使用`options=keyValues`时，它与NGSI-v2兼容，并返回个体实体的上下文数据。  
+这是一个以JSON格式的键值对表示的LowLevelOrchestrator示例。当使用`options=keyValues`时，它与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -499,7 +499,7 @@ LowLevelOrchestrator:
 ```  
 </details>  
 
-#### 低级编排器 NGSI-v2 标准化示例  
+#### 低级编排器NGSI-v2标准化示例  
 
 这是一个以JSON格式标准化的LowLevelOrchestrator示例。当不使用选项时，它与NGSI-v2兼容，并返回个体实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -527,7 +527,7 @@ LowLevelOrchestrator:
 
 #### 低级编排器 NGSI-LD 键值示例  
 
-这是一个以JSON-LD格式的键值对表示的LowLevelOrchestrator示例。当使用`options=keyValues`时，它与NGSI-LD兼容，并返回单个实体的上下文数据。  
+这是一个以JSON-LD格式作为键值对的LowLevelOrchestrator示例。当使用`options=keyValues`时，它与NGSI-LD兼容，并返回个体实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -546,7 +546,7 @@ LowLevelOrchestrator:
 
 #### 低级编排器 NGSI-LD 标准化示例  
 
-这是一个以JSON-LD格式标准化的LowLevelOrchestrator示例。当不使用选项时，它与NGSI-LD兼容，并返回单个实体的上下文数据。  
+这是一个以JSON-LD格式标准化的LowLevelOrchestrator示例。当不使用选项时，它与NGSI-LD兼容，并返回个体实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
