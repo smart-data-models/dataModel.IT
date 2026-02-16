@@ -1,0 +1,2 @@
+"id_", "type_", "linkFrom__type_", "linkFrom__object_", "linkTo__type_", "linkTo__object_", "networkPorts__type_", "networkPorts__object__0_", "status__type_", "status__value_", "@context__0_"
+"urn:ngsi-ld:NetworkConnection:01", "NetworkConnection", "Relationship", "urn:ngsi-ld:Service:01:Component:01", "Relationship", "urn:ngsi-ld:Service:WebApp01:Component:Backend", "Relationship", "urn:ngsi-ld:Service:WebApp01:Component:Backend:NetworkPort:Backend", "Property", "Up", "https://smartdatamodels.org/context.jsonld"
