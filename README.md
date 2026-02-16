@@ -15,7 +15,7 @@ The following entity types are available:
 
 - [ITTests](https://github.com/smart-data-models/dataModel.IT/blob/master/ITTests/README.md). This is the data model for representing the result of testing procedures.
 
-- [LowLevelOrchestrator](https://github.com/smart-data-models/dataModel.IT/blob/master/LowLevelOrchestrator/README.md). .
+- [LowLevelOrchestrator](https://github.com/smart-data-models/dataModel.IT/blob/master/LowLevelOrchestrator/README.md). A Low Level Orchestrator of the domain, which is associated with a unique orchestration type (e.g., Kubernetes, Docker, containerd, etc.).
 
 - [NetworkConnection](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkConnection/README.md). .
 
