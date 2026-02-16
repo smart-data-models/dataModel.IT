@@ -17,7 +17,7 @@ The following entity types are available:
 
 - [LowLevelOrchestrator](https://github.com/smart-data-models/dataModel.IT/blob/master/LowLevelOrchestrator/README.md). A Low Level Orchestrator of the domain, which is associated with a unique orchestration type (e.g., Kubernetes, Docker, containerd, etc.).
 
-- [NetworkConnection](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkConnection/README.md). .
+- [NetworkConnection](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkConnection/README.md). Data model for a Network connection among two ServiceComponents
 
 - [NetworkPort](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkPort/README.md). .
 
