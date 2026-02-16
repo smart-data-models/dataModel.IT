@@ -26,11 +26,11 @@ version: 0.0.1
   
 
 
-## Liste der Eigenschaften  
+## Liste von Eigenschaften  
 
 
-<sup><sub>[*] Wenn es in einem Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben könnte</sub></sup>  
-- `address[object]`: Die Postadresse  . Model: [https://schema.org/address](https://schema.org/address)  
+<sup><sub>[*] Wenn in einem Attribut kein Typ angegeben ist, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben könnte</sub></sup>  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: Das Land. Zum Beispiel Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
 	- `addressLocality[string]`: Die Ortschaft, in der sich die Straßenadresse befindet und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
 	- `addressRegion[string]`: Die Region, in der sich die Ortschaft befindet und die im Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
@@ -40,19 +40,19 @@ version: 0.0.1
 	- `streetAddress[string]`: Die Straßenadresse  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: Nummer, die ein bestimmtes Grundstück auf einer öffentlichen Straße identifiziert  
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  
-- `areaServed[string]`: Das geografische Gebiet, in dem ein Dienst oder ein angebotenes Produkt bereitgestellt wird  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `areaServed[string]`: Das geografische Gebiet, in dem ein Service oder ein angebotenes Produkt bereitgestellt wird  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Datenentität identifiziert  
-- `dateCreated[date-time]`: Zeitstempel für die Erstellung der Entität. Dieser wird in der Regel von der Speicherplattform zugewiesen  
+- `dateCreated[date-time]`: Zeitstempel für die Entitäten-Erstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  
 - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform zugewiesen  
 - `description[string]`: Eine Beschreibung dieses Artikels  
 - `domain[string]`: Domäne, der der Low-Level-Orchestrator angehört.  
 - `id[*]`: Eindeutiger Identifikator der Entität  
-- `location[*]`: Geojson-Verweis auf das Element. Es kann Punkt, Linienzug, Polygon, MultiPunkt, MultiLinienzug oder MultiPolygon sein  
+- `location[*]`: Geojson-Referenz zum Artikel. Es kann Punkt, Linienzug, Polygon, MultiPunkt, MultiLinienzug oder MultiPolygon sein  
 - `name[string]`: Der Name dieses Artikels  
 - `orchestrationType[string]`: Enum:'Kubernetes, Docker, containerd, Podman, iSulad'. Orchestrierungstyp des Low Level Orchestrators, der normalerweise ein Container-Management-Framework ist.  
-- `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenfolge enthält, die auf die eindeutigen IDs des/die Eigentümer(s) verweist  
+- `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenfolge enthält, die auf die eindeutigen IDs der Eigentümer(n) verweist  
 - `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen über das Element verweisen  
-- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entity-Daten als URL angeben. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellenanbieters oder die URL zum Quellobjekt zu verwenden.  
+- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angeben. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellenanbieters oder die URL zum Quellobjekt zu verwenden  
 - `type[string]`: NGSI-Entitätentyp. Es muss LowLevelOrchestrator sein  
 <!-- /30-PropertiesList -->
   
@@ -60,10 +60,10 @@ version: 0.0.1
   
 
 Erforderliche Eigenschaften  
-- `Domäne`  
+- `domain`  
 - `id`  
-- `Orchestrierungstyp`  
-- `Typ`  
+- `orchestrationType`  
+- `type`  
 <!-- /35-RequiredProperties -->
   
 <!-- 40-NotesYaml -->
@@ -75,9 +75,9 @@ Anmerkungen, die am Anfang der Spezifikation erscheinen
 <!-- 50-DataModelHeader -->
   
 
-## Datenmodellbeschreibung von Eigenschaften  
+## Datamodellbeschreibung von Eigenschaften  
 
-Nach dem Alphabet sortiert (Klicken für Details)  
+Sortiert alphabetisch (Klicken für Details)  
 <!-- /50-DataModelHeader -->
   
 <!-- 60-ModelYaml -->
@@ -481,9 +481,9 @@ Notizen, die mitten in der Spezifikation erscheinen
 <!-- 80-Examples -->
   
 
-## Beispiel-Nutzlasten  
+## Beispielnutzlasten  
 
-#### LowLevelOrchestrator NGSI-v2 Schlüssel-Werte Beispiel  
+#### LowLevelOrchestrator NGSI-v2 Schlüssel-Wert-Beispiel  
 
 Hier ist ein Beispiel für einen LowLevelOrchestrator im JSON-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und es die Kontextdaten einer einzelnen Entität zurückgibt.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -527,7 +527,7 @@ Hier ist ein Beispiel für einen LowLevelOrchestrator im JSON-Format als normali
 
 #### LowLevelOrchestrator NGSI-LD Schlüssel-Wert-Beispiel  
 
-Hier ist ein Beispiel für einen LowLevelOrchestrator im JSON-LD-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und gibt die Kontextdaten einer einzelnen Entität zurück.  
+Hier ist ein Beispiel für einen LowLevelOrchestrator im JSON-LD-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und es die Kontextdaten einer einzelnen Entität zurückgibt.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
