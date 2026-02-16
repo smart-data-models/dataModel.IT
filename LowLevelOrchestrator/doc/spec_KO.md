@@ -17,7 +17,7 @@
 <!-- 20-Description -->
   
 
-Global description: **도메인에 대한 낮은 수준의 오케스트레이터로, 고유한 오케스트레이션 유형(e.g., Kubernetes, Docker, containerd 등)과 연관되어 있다.**  
+Global description: **도메인의 Low Level Orchestrator로, 고유한 오케스트레이션 유형(예: Kubernetes, Docker, containerd 등)과 연관되어 있다.**  
 
 version: 0.0.1  
 <!-- /20-Description -->
@@ -29,30 +29,30 @@ version: 0.0.1
 ## 속성 목록  
 
 
-<sup><sub>[*] 속성에 유형이 없다면, 그것은 여러 유형이나 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
+<sup><sub>[*] 속성에 유형이 없다면, 그것은 여러 유형이나 서로 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
 - `address[object]`: 우편 주소  . Model: [https://schema.org/address](https://schema.org/address)  
-	- `addressCountry[string]`: 그 나라. 예를 들어, 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: 그 거리 주소가 속한 지역 및 그 지역이 속한 지역  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: 그 지역은 지역이 있으며, 그 나라에 있습니다  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: 구는 일부 국가에서 지방 정부가 관리하는 유형의 행정 구역입니다  
-	- `postOfficeBoxNumber[string]`: 우체국 사서함 번호(PO 박스 주소용). 예를 들어, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `addressCountry[string]`: 그 나라. 예를 들어 스페인  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 그 거리 주소가 속한 지역이자, 지역에 속한  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: 지역은 그 지역에 속해 있으며, 그 지역은 국가에 있습니다  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 구는 일부 국가에서 지방 정부가 관리하는 유형의 행정 구역이다.  
+	- `postOfficeBoxNumber[string]`: 우체국 사서함 번호(PO 박스 주소의 경우). 예를 들어, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: 우편번호. 예를 들어, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: 도로 주소  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: 공공 도로상 특정 부동산을 식별하는 번호  
 - `alternateName[string]`: 이 항목의 대체 이름  
 - `areaServed[string]`: 서비스나 제공된 항목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자열 시퀀스  
-- `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 저장소 플랫폼에 의해 할당됩니다.  
-- `dateModified[date-time]`: 엔티티의 마지막 수정 시각. 이것은 일반적으로 저장 플랫폼에 의해 할당됩니다.  
+- `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 보통 저장 플랫폼에 의해 할당됨  
+- `dateModified[date-time]`: 엔티티의 마지막 수정 시간戳. 이것은 일반적으로 저장 플랫폼에 의해 할당됩니다.  
 - `description[string]`: 이 항목에 대한 설명  
 - `domain[string]`: Low Level Orchestrator가 속한 도메인  
-- `id[*]`: 엔티티의 고유 식별자  
+- `id[*]`: 개체의 고유 식별자  
 - `location[*]`: Geojson 아이템 참조입니다. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon 중 하나가 될 수 있습니다.  
 - `name[string]`: 이 항목의 이름  
-- `orchestrationType[string]`: Enum: 'Kubernetes, Docker, containerd, Podman, iSulad'. 로우 레벨 오케스트레이터의 오케스트레이션 유형으로, 일반적으로 컨테이너 관리 프레임워크입니다.  
-- `owner[array]`: 소유자(들)의 고유 ID를 참조하는 문자열 시퀀스를 JSON으로 인코딩한 문자열을 포함하는 목록  
+- `orchestrationType[string]`: Enum:'Kubernetes, Docker, containerd, Podman, iSulad'. 일반적으로 컨테이너 관리 프레임워크인 Low Level Orchestrator의 오케스트레이션 유형입니다.  
+- `owner[array]`: 소유자(들)의 고유 ID를 참조하는 문자 시퀀스를 JSON으로 인코딩한 문자열을 포함하는 목록  
 - `seeAlso[*]`: 아이템에 대한 추가 리소스를 가리키는 URI 목록  
-- `source[string]`: 엔티티 데이터의 원래 출처를 URL로 제공하는 문자열 시퀀스. 출처 제공자의 완전한 도메인 이름이나 출처 객체에 대한 URL로 지정하는 것을 권장합니다.  
+- `source[string]`: 엔티티 데이터의 원래 출처를 URL로 제공하는 문자열 시퀀스. 출처 제공자의 완전히 정규화된 도메인 이름이나 출처 객체에 대한 URL로 지정하는 것을 권장합니다.  
 - `type[string]`: NGSI 엔티티 유형. LowLevelOrchestrator 여야 합니다.  
 <!-- /30-PropertiesList -->
   
@@ -60,10 +60,10 @@ version: 0.0.1
   
 
 필수 속성  
-- `도메인`  
+- `domain`  
 - `id`  
-- `구성 유형`  
-- `유형`  
+- `orchestrationType`  
+- `type`  
 <!-- /35-RequiredProperties -->
   
 <!-- 40-NotesYaml -->
@@ -483,9 +483,9 @@ LowLevelOrchestrator:
 
 ## 예제 페이로드  
 
-#### LowLevelOrchestrator NGSI-v2 키-값 예시  
+#### LowLevelOrchestrator NGSI-v2 키-값 예제  
 
-여기에는 키-값으로 JSON 형식의 LowLevelOrchestrator의 예가 있습니다. 이것은 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+여기에는 키-값으로 NGSI-v2와 호환되는 LowLevelOrchestrator의 JSON 형식 예가 있습니다. `options=keyValues`를 사용할 때 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -499,9 +499,9 @@ LowLevelOrchestrator:
 ```  
 </details>  
 
-#### LowLevelOrchestrator NGSI-v2 표준화 예시  
+#### LowLevelOrchestrator NGSI-v2 정규화 예시  
 
-여기에는 JSON 형식으로 정규화된 LowLevelOrchestrator의 예가 있습니다. 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+여기에는 JSON 형식으로 정규화된 LowLevelOrchestrator의 예가 있습니다. 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -546,7 +546,7 @@ LowLevelOrchestrator:
 
 #### LowLevelOrchestrator NGSI-LD 정규화 예시  
 
-여기에는 JSON-LD 형식으로 정규화된 LowLevelOrchestrator의 예가 있습니다. 이것은 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+이것은 JSON-LD 형식으로 정규화된 LowLevelOrchestrator의 예입니다. 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -576,7 +576,7 @@ LowLevelOrchestrator:
 <!-- 90-FooterNotes -->
   
 
-스펙의 바닥글에 나타나는 노트  
+사양의 바닥글에 나타나는 메모  
 <!-- /90-FooterNotes -->
   
 <!-- 95-Units -->
