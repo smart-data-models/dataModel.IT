@@ -42,17 +42,17 @@ version: 0.0.1
 - `alternateName[string]`: Un nombre alternativo para este artículo  
 - `areaServed[string]`: El área geográfica donde se proporciona un servicio o artículo ofrecido  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizados  
-- `dateCreated[date-time]`: Marca de tiempo de creación de entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
+- `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
 - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
 - `description[string]`: Una descripción de este artículo  
 - `domain[string]`: Dominio al que pertenece el Orquestador de Bajo Nivel.  
 - `id[*]`: Identificador único de la entidad  
 - `location[*]`: Referencia Geojson del elemento. Puede ser Punto, LineaString, Polígono, MultiPunto, MultiLineaString o MultiPolígono  
 - `name[string]`: El nombre de este artículo  
-- `orchestrationType[string]`: Enum: 'Kubernetes, Docker, containerd, Podman, iSulad'. Tipo de orquestación del Orquestador de Nivel Bajo, que generalmente es un marco de gestión de contenedores.  
+- `orchestrationType[string]`: Enum: 'Kubernetes, Docker, containerd, Podman, iSulad'. Tipo de orquestación del Orquestador de Nivel Bajo, que suele ser un marco de gestión de contenedores.  
 - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los Ids únicos del(los) propietario(s)  
-- `seeAlso[*]`: Lista de uri que apuntan a recursos adicionales sobre el elemento  
-- `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente o la URL del objeto de la fuente.  
+- `seeAlso[*]`: Lista de uri que apuntan a recursos adicionales sobre el artículo  
+- `source[string]`: Una secuencia de caracteres que da la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente o la URL del objeto de la fuente.  
 - `type[string]`: Tipo de entidad NGSI. Tiene que ser LowLevelOrchestrator  
 <!-- /30-PropertiesList -->
   
@@ -60,22 +60,22 @@ version: 0.0.1
   
 
 Propiedades requeridas  
-- `dominio`  
+- `domain`  
 - `id`  
-- `tipoDeOrquestacion`  
-- `tipo`  
+- `orchestrationType`  
+- `type`  
 <!-- /35-RequiredProperties -->
   
 <!-- 40-NotesYaml -->
   
 
-Notas que aparecen al comienzo de la especificación  
+Notas que aparecen al principio de la especificación  
 <!-- /40-NotesYaml -->
   
 <!-- 50-DataModelHeader -->
   
 
-## Descripción del modelo de datos de propiedades  
+## Descripción del Modelo de Datos de propiedades  
 
 Ordenado alfabéticamente (haga clic para detalles)  
 <!-- /50-DataModelHeader -->
@@ -475,7 +475,7 @@ LowLevelOrchestrator:
 <!-- 70-MiddleNotes -->
   
 
-Notas que aparecen en medio de la especificación  
+Notas que aparecen en el medio de la especificación  
 <!-- /70-MiddleNotes -->
   
 <!-- 80-Examples -->
@@ -483,7 +483,7 @@ Notas que aparecen en medio de la especificación
 
 ## Cargas de ejemplo  
 
-#### OrquestadorDeNivelBajo NGSI-v2 clave-valor Ejemplo  
+#### OrquestadorDeNivelBajoEjemploDeValoresClaveNGSI-v2  
 
 Aquí hay un ejemplo de un LowLevelOrchestrator en formato JSON como clave-valor. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -525,7 +525,7 @@ Aquí hay un ejemplo de un LowLevelOrchestrator en formato JSON normalizado. Est
 ```  
 </details>  
 
-#### OrquestadorDeNivelBajo clave-valor de ejemplo NGSI-LD  
+#### OrquestadorDeNivelBajo clave-valor de ejemplo de NGSI-LD  
 
 Aquí hay un ejemplo de un LowLevelOrchestrator en formato JSON-LD como clave-valor. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
