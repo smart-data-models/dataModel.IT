@@ -2,7 +2,7 @@
   
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 
-実体: LowLevelOrchestrator  
+エンティティ: LowLevelOrchestrator  
 ============================
 <!-- /10-Header -->
   
@@ -17,7 +17,7 @@
 <!-- 20-Description -->
   
 
-Global description: **ドメインのローレベルオーケストレーターであり、Kubernetes、Docker、containerdなどの一意のオーケストレーションタイプ（例）と関連付けられている。**  
+Global description: **ドメインのローレベルオーケストレーターで、ユニークなオーケストレーションの種類（例：Kubernetes、Docker、containerdなど）と関連付けられている。**  
 
 version: 0.0.1  
 <!-- /20-Description -->
@@ -29,47 +29,47 @@ version: 0.0.1
 ## プロパティの一覧  
 
 
-<sup><sub>[*] 属性に型がないのは、複数の型や異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
+<sup><sub>[*] 属性に型がない場合、それは複数の型や異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
 - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: その国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: 住所が存在する地域、およびその地域が存在する地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: その地域は、地方が存在し、かつその国に存在する地域です。  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: 地区は、一部の国では地方自治体によって管理される行政区画の一種です  
-	- `postOfficeBoxNumber[string]`: ポストオフィスボックス番号は、ポストオフィスボックス住所の場合。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `addressLocality[string]`: 住所が存在する地域、およびその地域に位置する地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: その地域は、自治体が存在し、かつその国に位置する地域です。  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 地区は、行政区画の一種であり、いくつかの国では、地方自治体によって管理される。  
+	- `postOfficeBoxNumber[string]`: ポストオフィスボックス番号は、ポストオフィスボックス住所の場合。たとえば、03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: 郵便番号。例えば、24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: 住所  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-	- `streetNr[string]`: 公道上の特定の物件を識別する番号  
+	- `streetNr[string]`: 特定の公道上の特性を識別する番号  
 - `alternateName[string]`: このアイテムの別名  
 - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)  
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する文字列のシーケンス  
+- `dataProvider[string]`: 調和データエンティティの提供者を識別する文字列のシーケンス  
 - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられる。  
 - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられる。  
 - `description[string]`: このアイテムの説明  
-- `domain[string]`: ローエンドオーケストレーターが所属するドメイン。  
+- `domain[string]`: ローエンドオーケストレータが所属するドメイン。  
 - `id[*]`: エンティティの固有識別子  
 - `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかになります。  
 - `name[string]`: このアイテムの名前  
-- `orchestrationType[string]`: Enum:'Kubernetes, Docker, containerd, Podman, iSulad'。通常、コンテナ管理フレームワークであるローレベルオーケストレータのオーケストレーションの種類です。  
-- `owner[array]`: 所有者のユニークIDを参照する文字シーケンスのJSONエンコードされたリストを含む  
-- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  
-- `source[string]`: エンティティデータの元のソースをURLとして表す文字列のシーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨される。  
-- `type[string]`: NGSIエンティティタイプ。LowLevelOrchestratorである必要があります。  
+- `orchestrationType[string]`: Enum:'Kubernetes, Docker, containerd, Podman, iSulad'。低レベルオーケストレータのオーケストレーションの種類で、通常はコンテナ管理フレームワークです。  
+- `owner[array]`: 所有者のユニークIDを参照する文字シーケンスのJSONエンコードされたシーケンスを含むリスト  
+- `seeAlso[*]`: アイテムに関する追加のリソースを指すURIのリスト  
+- `source[string]`: エンティティデータの元のソースをURLとして示す文字列のシーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることを推奨する。  
+- `type[string]`: NGSIエンティティタイプ。LowLevelOrchestratorでなければなりません。  
 <!-- /30-PropertiesList -->
   
 <!-- 35-RequiredProperties -->
   
 
 必要なプロパティ  
-- `ドメイン`  
-- `ID`  
-`orchestrationType`  
-- `タイプ`  
+- `domain`  
+- `id`  
+- `orchestrationType`  
+- `type`  
 <!-- /35-RequiredProperties -->
   
 <!-- 40-NotesYaml -->
   
 
-仕様の冒頭に表示されるノート  
+仕様の最初に現れるノート  
 <!-- /40-NotesYaml -->
   
 <!-- 50-DataModelHeader -->
@@ -475,7 +475,7 @@ LowLevelOrchestrator:
 <!-- 70-MiddleNotes -->
   
 
-仕様の中途に現れる注記  
+仕様の中に現れる注記  
 <!-- /70-MiddleNotes -->
   
 <!-- 80-Examples -->
@@ -485,7 +485,7 @@ LowLevelOrchestrator:
 
 #### LowLevelOrchestrator NGSI-v2 キー値の例  
 
-ここは、キーと値のペアとしてのJSON形式のLowLevelOrchestratorの例です。これは、`options=keyValues`を使用してNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここは、キー値としてのJSON形式のLowLevelOrchestratorの例です。これは、`options=keyValues`を使用してNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -501,7 +501,7 @@ LowLevelOrchestrator:
 
 #### LowLevelOrchestrator NGSI-v2 正規化例  
 
-ここでは、正規化されたJSON形式のLowLevelOrchestratorの例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここは、正規化されたJSON形式のLowLevelOrchestratorの例です。これは、オプションを使用しない場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -527,7 +527,7 @@ LowLevelOrchestrator:
 
 #### LowLevelOrchestrator NGSI-LD キー値の例  
 
-ここでは、JSON-LD形式のキー値としてのLowLevelOrchestratorの例を示します。これは、`options=keyValues`を使用してNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここは、JSON-LD形式のキー値としてのLowLevelOrchestratorの例です。これは、`options=keyValues`を使用してNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -546,7 +546,7 @@ LowLevelOrchestrator:
 
 #### LowLevelOrchestrator NGSI-LD 正規化例  
 
-以下は、正規化されたJSON-LD形式のLowLevelOrchestratorの例です。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、正規化されたJSON-LD形式のLowLevelOrchestratorの例を示します。これは、オプションを使用しない場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
