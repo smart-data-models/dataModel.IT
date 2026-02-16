@@ -1,0 +1,2 @@
+"id_", "type_", "description__type_", "description__value_", "domain__type_", "domain__object_", "orchestrationType__type_", "orchestrationType__value_", "@context__0_"
+"urn:ngsi-ld:LowLevelOrchestrator:Cloud:Kubernetes", "LowLevelOrchestrator", "Property", "LLO of type Kubernetes of the Domain Cloud", "Relationship", "urn:ngsi-ld:Domain:Cloud", "Property", "Kubernetes", "https://smartdatamodels.org/context.jsonld"
