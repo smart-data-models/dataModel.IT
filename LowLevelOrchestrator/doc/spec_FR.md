@@ -11,7 +11,7 @@ Entité: LowLevelOrchestrator
 
 [Licence ouverte](https://github.com/smart-data-models//dataModel.IT/blob/master/LowLevelOrchestrator/LICENSE.md)  
 
-[document généré automatiquement](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[Document généré automatiquement](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->
   
 <!-- 20-Description -->
@@ -29,7 +29,7 @@ version: 0.0.1
 ## Liste des propriétés  
 
 
-<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modes.</sub></sup>  
+<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>  
 - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
 	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
@@ -42,15 +42,15 @@ version: 0.0.1
 - `alternateName[string]`: Un nom alternatif pour cet article  
 - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  
-- `dateCreated[date-time]`: Horodatage de création d'entité. Ceci sera généralement alloué par la plateforme de stockage  
-- `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Ceci sera généralement alloué par la plateforme de stockage  
+- `dateCreated[date-time]`: Horodatage de création d'entité. Ceci sera généralement alloué par la plate-forme de stockage  
+- `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Cela sera généralement alloué par la plateforme de stockage  
 - `description[string]`: Une description de cet article  
 - `domain[string]`: Domaine auquel appartient l'Orchestrateur de bas niveau.  
 - `id[*]`: Identifiant unique de l'entité  
 - `location[*]`: Référence Geojson de l'élément. Il peut s'agir d'un Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  
 - `name[string]`: Le nom de cet article  
-- `orchestrationType[string]`: Enum:'Kubernetes, Docker, containerd, Podman, iSulad'. Type d'orchestration de l'Orchestrateur de bas niveau, qui est généralement un cadre de gestion de conteneurs.  
-- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON faisant référence aux Ids uniques du ou des propriétaires  
+- `orchestrationType[string]`: Énum : 'Kubernetes, Docker, containerd, Podman, iSulad'. Type d'orchestration de l'Orchestrateur de bas niveau, qui est généralement un framework de gestion de conteneurs.  
+- `owner[array]`: Une liste contenant une séquence de caractères codée JSON faisant référence aux Ids uniques du ou des propriétaires  
 - `seeAlso[*]`: Liste d'uri pointant vers des ressources supplémentaires sur l'élément  
 - `source[string]`: Une séquence de caractères indiquant la source d'origine des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine pleinement qualifié du fournisseur de la source ou l'URL de l'objet source.  
 - `type[string]`: Type d'entité NGSI. Il doit s'agir de LowLevelOrchestrator  
@@ -60,9 +60,9 @@ version: 0.0.1
   
 
 Propriétés requises  
-- `domaine`  
+- `domain`  
 - `id`  
-- `typeDorchestration`  
+- `orchestrationType`  
 - `type`  
 <!-- /35-RequiredProperties -->
   
@@ -485,7 +485,7 @@ Notes apparaissant au milieu de la spécification
 
 #### Orchestrateur de bas niveau Exemple de valeurs clés NGSI-v2  
 
-Voici un exemple de LowLevelOrchestrator au format JSON sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de LowLevelOrchestrator au format JSON sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et retourne les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -499,9 +499,9 @@ Voici un exemple de LowLevelOrchestrator au format JSON sous forme de paires cl�
 ```  
 </details>  
 
-#### Orchestrateur de bas niveau exemple normalisé NGSI-v2  
+#### Orchestrateur de bas niveau NGSI-v2 exemple normalisé  
 
-Voici un exemple de LowLevelOrchestrator au format JSON normalisé. Ceci est compatible avec NGSI-v2 lorsqu'on n'utilise pas d'options et retourne les données de contexte d'une entité individuelle.  
+Voici un exemple de LowLevelOrchestrator au format JSON normalisé. Ceci est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et retourne les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -527,7 +527,7 @@ Voici un exemple de LowLevelOrchestrator au format JSON normalisé. Ceci est com
 
 #### Orchestrateur de bas niveau Exemple de valeurs clés NGSI-LD  
 
-Voici un exemple de LowLevelOrchestrator au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et retourne les données de contexte d'une entité individuelle.  
+Voici un exemple de LowLevelOrchestrator au format JSON-LD sous forme de paires clé-valeur. Cela est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et retourne les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
