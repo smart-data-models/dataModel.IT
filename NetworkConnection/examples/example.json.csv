@@ -1,0 +1,2 @@
+"id_", "type_", "linkFrom_", "linkTo_", "networkPorts__0_", "status_"
+"NetworkConnection:01", "NetworkConnection", "Service:01:Component:01", "Service:WebApp01:Component:Backend", "Service:WebApp01:Component:Backend:NetworkPort:Backend", "Up"
