@@ -2,7 +2,7 @@
   
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 
-実体: NetworkConnection  
+エンティティ: NetworkConnection  
 =========================
 <!-- /10-Header -->
   
@@ -11,13 +11,13 @@
 
 [オープンライセンス](https://github.com/smart-data-models//dataModel.IT/blob/master/NetworkConnection/LICENSE.md)  
 
-[自動生成された文書](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[自動生成ドキュメント](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->
   
 <!-- 20-Description -->
   
 
-Global description: **２つのサービスコンポーネント間のネットワーク接続のためのデータモデル**  
+Global description: **2つのServiceComponents間のネットワーク接続のためのデータモデル**  
 
 version: 0.0.1  
 <!-- /20-Description -->
@@ -29,33 +29,33 @@ version: 0.0.1
 ## プロパティの一覧  
 
 
-<sup><sub>[*] 属性に型がないのは、複数の型や異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
+<sup><sub>[*] 属性に型がない場合、それは複数の型や異なる形式/パターンを持つ可能性があるためです</sub></sup>  
 - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: その国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: 住所が存在する地域、およびその地域が存在する地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: その地域は、自治体が存在し、かつその国に位置する地域です。  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: 地区は、一部の国では地方自治体によって管理される行政区画の一種です。  
-	- `postOfficeBoxNumber[string]`: ポストオフィスボックス番号は、ポストオフィスボックスの住所の場合。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: 郵便番号。たとえば、24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `addressLocality[string]`: 住所が存在する地域およびその地域が存在する地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: その地方は、地域が存在し、そしてその国に存在する。  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 地区は、行政区分の一種であり、一部の国では地方自治体によって管理される  
+	- `postOfficeBoxNumber[string]`: 郵便ポストボックス番号（POボックスアドレスの場合）。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 郵便番号。例えば、24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: 住所  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: 公道上の特定の物件を識別する番号  
 - `alternateName[string]`: このアイテムの別名  
-- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的なエリア  . Model: [https://schema.org/Text](https://schema.org/Text)  
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する文字列のシーケンス  
-- `dateCreated[date-time]`: エンティティ作成タイムスタンプ。通常、ストレージプラットフォームによって割り当てられます。  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `dataProvider[string]`: 調和データエンティティの提供者を識別する文字列のシーケンス  
+- `dateCreated[date-time]`: エンティティ作成タイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられる。  
 - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられる。  
 - `description[string]`: このアイテムの説明  
-- `id[*]`: エンティティの固有識別子  
+- `id[*]`: エンティティの固有の識別子  
 - `linkFrom[string]`: 'linkTo'コンポーネントとのネットワーク接続を確立する必要があるServiceComponent  
-- `linkTo[string]`: ServiceComponentは、'linkFrom'コンポーネントによって使用される必要があるいくつかのネットワークポートを公開するコンポーネントです。  
-- `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかになります。  
+- `linkTo[string]`: リンク先のコンポーネントによって使用される必要があるいくつかのネットワークポートを公開するServiceComponent  
+- `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかになることができる。  
 - `name[string]`: このアイテムの名前  
 - `networkPorts[array]`: 'linkTo'コンポーネントによって公開され、'linkFrom'コンポーネントによって使用されるネットワークポート  
-- `owner[array]`: 所有者のユニークIDを参照する文字シーケンスのJSONエンコードされたシーケンスを含むリスト  
+- `owner[array]`: 所有者のユニークIDを参照する文字シーケンスをJSONでエンコードしたものを含むリスト  
 - `seeAlso[*]`: アイテムに関する追加のリソースを指すURIのリスト  
-- `source[string]`: エンティティデータの元のソースをURLとして表す文字シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることを推奨する。  
+- `source[string]`: エンティティデータの元のソースをURLとして示す文字列のシーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることを推奨する。  
 - `status[string]`: Enum: 'Up', 'Down'。接続の状態  
-- `type[string]`: NGSIエンティティタイプです。NetworkConnectionである必要があります。  
+- `type[string]`: NGSIエンティティタイプ。NetworkConnectionでなければなりません。  
 <!-- /30-PropertiesList -->
   
 <!-- 35-RequiredProperties -->
@@ -73,7 +73,7 @@ version: 0.0.1
 <!-- 40-NotesYaml -->
   
 
-仕様の最初に表示される注記  
+仕様の最初に表示されるノート  
 <!-- /40-NotesYaml -->
   
 <!-- 50-DataModelHeader -->
@@ -494,7 +494,7 @@ NetworkConnection:
 <!-- 70-MiddleNotes -->
   
 
-仕様の中間に出現する注記  
+仕様の中間に出現するノート  
 <!-- /70-MiddleNotes -->
   
 <!-- 80-Examples -->
@@ -504,7 +504,7 @@ NetworkConnection:
 
 #### NetworkConnection NGSI-v2 キー値の例  
 
-ここでは、キーと値のペアとしてJSON形式のNetworkConnectionの例を示します。これは、`options=keyValues`を使用してNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、キーと値のペアとしてのJSON形式のNetworkConnectionの例を示します。これは、`options=keyValues`を使用してNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -552,7 +552,7 @@ NetworkConnection:
 
 #### ネットワーク接続 NGSI-LD キー値の例  
 
-ここはJSON-LD形式のNetworkConnectionの例です。これは、`options=keyValues`を使用してNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返すときに使用されます。  
+ここでは、キー値としてのJSON-LD形式のNetworkConnectionの例を示します。これは、`options=keyValues`を使用してNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -573,7 +573,7 @@ NetworkConnection:
 
 #### ネットワーク接続 NGSI-LD 正規化例  
 
-ここは、正規化されたJSON-LD形式のNetworkConnectionの例です。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ここでは、正規化されたJSON-LD形式のNetworkConnectionの例を示します。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
