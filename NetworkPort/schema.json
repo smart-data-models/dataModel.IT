@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0.1",
   "$id": "https://smart-data-models.github.io/dataModel.ITinfrastructure/NetworkPort/schema.json",
   "title": "Smart Data Models - ITinfrastructure / NetworkPort",
-  "description": "Network port exposed by a ServiceComponent.",
+  "description": "Network port exposed by a ServiceComponent",
   "modelTags": "",
   "derivedFrom": "",
   "license": "https://smart-data-models.github.io/dataModel.ITinfrastructure/NetworkPort/LICENSE.md",
@@ -26,7 +26,7 @@
         },
         "number": {
           "type": "number",
-          "description": "Property. Number of the network port."
+          "description": "Property. Number of the network port"
         },
         "protocol": {
           "type": "string",
@@ -35,7 +35,7 @@
             "UDP",
             "SCTP"
           ],
-          "description": "Property. Protocol of the network port. Enum:'TCP', 'UDP', 'SCTP'"
+          "description": "Property. Protocol of the network port. Enum:'TCP, UDP, CTP'"
         }
       }
     }
