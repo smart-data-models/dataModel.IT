@@ -32,7 +32,7 @@ version: 0.0.1
 <sup><sub>[*] Si no hay un tipo en un atributo es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>  
 - `address[object]`: La dirección de correo  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: La localidad en la que está la dirección de la calle, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección de la calle, y que se encuentra en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
 	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que se encuentra en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
 	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionado por el gobierno local  
 	- `postOfficeBoxNumber[string]`: El número de casilla de correo para las direcciones de casilla de correo. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
@@ -42,7 +42,7 @@ version: 0.0.1
 - `alternateName[string]`: Un nombre alternativo para este artículo  
 - `areaServed[string]`: El área geográfica donde se proporciona un servicio o artículo ofrecido  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizados  
-- `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
+- `dateCreated[date-time]`: Marca de tiempo de creación de entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
 - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
 - `description[string]`: Una descripción de este artículo  
 - `id[*]`: Identificador único de la entidad  
@@ -51,9 +51,9 @@ version: 0.0.1
 - `location[*]`: Referencia Geojson al elemento. Puede ser Punto, LineaString, Polígono, MultiPunto, MultiLineaString o MultiPolígono  
 - `name[string]`: El nombre de este artículo  
 - `networkPorts[array]`: Puertos de red expuestos por el componente 'linkTo' y utilizados por el componente 'linkFrom'  
-- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los Ids únicos del (los) propietario(s)  
+- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los Ids únicos del(los) propietario(s)  
 - `seeAlso[*]`: Lista de uri que apuntan a recursos adicionales sobre el artículo  
-- `source[string]`: Una secuencia de caracteres que da la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto de la fuente.  
+- `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente o la URL del objeto de la fuente.  
 - `status[string]`: Enum: 'Arriba', 'Abajo'. Estado de la conexión  
 - `type[string]`: Tipo de entidad NGSI. Tiene que ser NetworkConnection  
 <!-- /30-PropertiesList -->
@@ -79,9 +79,9 @@ Notas que aparecen al principio de la especificación
 <!-- 50-DataModelHeader -->
   
 
-## Descripción del modelo de datos de propiedades  
+## Descripción del modelo de datos de las propiedades  
 
-Ordenado alfabéticamente (haga clic para detalles)  
+Ordenado alfabéticamente (haga clic para obtener detalles)  
 <!-- /50-DataModelHeader -->
   
 <!-- 60-ModelYaml -->
@@ -502,7 +502,7 @@ Notas que aparecen en medio de la especificación
 
 ## Cargas de ejemplo  
 
-#### Conexión de red NGSI-v2 clave-valor Ejemplo  
+#### Conexión de red clave-valor NGSI-v2 Ejemplo  
 
 Aquí hay un ejemplo de NetworkConnection en formato JSON como clave-valor. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -522,7 +522,7 @@ Aquí hay un ejemplo de NetworkConnection en formato JSON como clave-valor. Esto
 
 #### Conexión de red NGSI-v2 normalizado Ejemplo  
 
-Aquí hay un ejemplo de una NetworkConnection en formato JSON como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de NetworkConnection en formato JSON normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -550,7 +550,7 @@ Aquí hay un ejemplo de una NetworkConnection en formato JSON como normalizado. 
 ```  
 </details>  
 
-#### Conexión de red clave-valor de ejemplo NGSI-LD  
+#### Conexión de red NGSI-LD clave-valor Ejemplo  
 
 Aquí hay un ejemplo de NetworkConnection en formato JSON-LD como clave-valor. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -573,7 +573,7 @@ Aquí hay un ejemplo de NetworkConnection en formato JSON-LD como clave-valor. E
 
 #### Conexión de red NGSI-LD normalizado Ejemplo  
 
-Aquí hay un ejemplo de NetworkConnection en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de una NetworkConnection en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -607,7 +607,7 @@ Aquí hay un ejemplo de NetworkConnection en formato JSON-LD normalizado. Esto e
 <!-- 90-FooterNotes -->
   
 
-Notas que aparecen en el pie de página de la especificación  
+Notas que aparecen en el pie de la especificación  
 <!-- /90-FooterNotes -->
   
 <!-- 95-Units -->
