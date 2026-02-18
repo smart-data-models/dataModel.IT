@@ -23,7 +23,7 @@ The following entity types are available:
 
 - [PersistentStorage](https://github.com/smart-data-models/dataModel.IT/blob/master/PersistentStorage/README.md). Persistent storage requested by a ServiceComponent.
 
-- [PowerSource](https://github.com/smart-data-models/dataModel.IT/blob/master/PowerSource/README.md). .
+- [PowerSource](https://github.com/smart-data-models/dataModel.IT/blob/master/PowerSource/README.md). Power source of an Infrastructure Element.
 
 - [Service](https://github.com/smart-data-models/dataModel.IT/blob/master/Service/README.md). .
 
