@@ -67,7 +67,6 @@ PowerSource:
         type: Property
     currentPowerGeneratorPotential:
       description: Current power generator potential.
-      format: float
       type: number
       x-ngsi:
         type: Property
@@ -96,7 +95,6 @@ PowerSource:
         type: Property
     greenEnergyRatio:
       description: Ratio (between 0 and 1) of green energy used by the power source.
-      format: float
       maximum: 1
       minimum: 0
       type: number
@@ -371,8 +369,6 @@ PowerSource:
   required:
     - id
     - type
-    - greenEnergyRatio
-    - currentPowerGeneratorPotential
   type: object
   x-derived-from: ''
   x-disclaimer: Redistribution and use in source and binary forms...
