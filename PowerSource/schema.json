@@ -27,22 +27,18 @@
         "greenEnergyRatio": {
           "type": "number",
           "description": "Property. Ratio (between 0 and 1) of green energy used by the power source.",
-          "format" : "float",
           "minimum": 0,
           "maximum": 1
         },
         "currentPowerGeneratorPotential": {
           "type": "number",
-          "description": "Property. Units:'kW'. Current power generator potential.",
-          "format" : "float"
+          "description": "Property. Units:'kW'. Current power generator potential."
         }
       }
     }
   ],
   "required": [
     "id",
-    "type",
-    "greenEnergyRatio",
-    "currentPowerGeneratorPotential"
+    "type"
   ]
 }
