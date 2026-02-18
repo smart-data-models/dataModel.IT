@@ -19,7 +19,7 @@ The following entity types are available:
 
 - [NetworkConnection](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkConnection/README.md). Data model for a Network connection among two ServiceComponents
 
-- [NetworkPort](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkPort/README.md). .
+- [NetworkPort](https://github.com/smart-data-models/dataModel.IT/blob/master/NetworkPort/README.md). Network port exposed by a ServiceComponent.
 
 - [PersistentStorage](https://github.com/smart-data-models/dataModel.IT/blob/master/PersistentStorage/README.md). Persistent storage requested by a ServiceComponent.
 
