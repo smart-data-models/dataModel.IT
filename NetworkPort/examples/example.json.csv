@@ -1,0 +1,2 @@
+"id_", "type_", "portNumber_", "portProtocol_"
+"urn:ngsi-ld:Service:WebApp01:Component:Backend:NetworkPort:01", "NetworkPort", "443", "TCP"
