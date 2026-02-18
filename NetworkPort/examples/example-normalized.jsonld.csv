@@ -1,0 +1,2 @@
+"id_", "type_", "portNumber__type_", "portNumber__value_", "portProtocol__type_", "portProtocol__value_", "@context__0_"
+"urn:ngsi-ld:Service:WebApp01:Component:Backend:NetworkPort:01", "NetworkPort", "Property", "443", "Property", "TCP", "https://smartdatamodels.org/context.jsonld"
