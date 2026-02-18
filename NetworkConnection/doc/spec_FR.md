@@ -29,11 +29,11 @@ version: 0.0.1
 ## Liste des propriétés  
 
 
-<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modes.</sub></sup>  
+<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>  
 - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
 	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: La région dans laquelle se trouve la localité, et qui est dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité, et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
 	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local  
 	- `postOfficeBoxNumber[string]`: Le numéro de boîte postale pour les adresses de boîte postale. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
@@ -43,17 +43,17 @@ version: 0.0.1
 - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  
 - `dateCreated[date-time]`: Horodatage de création d'entité. Ceci sera généralement alloué par la plateforme de stockage  
-- `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Ceci sera généralement alloué par la plateforme de stockage  
+- `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Cela sera généralement alloué par la plateforme de stockage  
 - `description[string]`: Une description de cet article  
 - `id[*]`: Identifiant unique de l'entité  
-- `linkFrom[string]`: ComposantService qui nécessite d'établir une connexion réseau avec le composant 'linkTo'  
+- `linkFrom[string]`: ComposantService qui a besoin d'établir une connexion réseau avec le composant 'linkTo'  
 - `linkTo[string]`: ComposantService qui expose certains ports réseau qui doivent être utilisés par le composant 'linkFrom'  
 - `location[*]`: Référence Geojson de l'élément. Il peut s'agir d'un Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  
 - `name[string]`: Le nom de cet article  
 - `networkPorts[array]`: Ports réseau exposés par le composant 'linkTo' et utilisés par le composant 'linkFrom'  
 - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON faisant référence aux Ids uniques du ou des propriétaires  
 - `seeAlso[*]`: Liste d'uri pointant vers des ressources supplémentaires sur l'élément  
-- `source[string]`: Une séquence de caractères indiquant la source d'origine des données d'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur de source ou l'URL de l'objet source.  
+- `source[string]`: Une séquence de caractères indiquant la source d'origine des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine pleinement qualifié du fournisseur de la source, ou l'URL de l'objet source.  
 - `status[string]`: Énumération : 'Haut', 'Bas'. État de la connexion  
 - `type[string]`: Type d'entité NGSI. Il doit s'agir de NetworkConnection  
 <!-- /30-PropertiesList -->
@@ -81,7 +81,7 @@ Notes apparaissant au début de la spécification
 
 ## Description du modèle de données des propriétés  
 
-Classé par ordre alphabétique (cliquez pour plus de détails)  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <!-- /50-DataModelHeader -->
   
 <!-- 60-ModelYaml -->
@@ -502,9 +502,9 @@ Notes apparaissant au milieu de la spécification
 
 ## Exemples de charges utiles  
 
-#### ConnexionRéseau NGSI-v2 exemple de valeurs-clés  
+#### ConnexionRéseau NGSI-v2 clés-valeurs Exemple  
 
-Voici un exemple de NetworkConnection au format JSON sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de NetworkConnection au format JSON sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lorsque vous utilisez `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -522,7 +522,7 @@ Voici un exemple de NetworkConnection au format JSON sous forme de paires clé-v
 
 #### ConnexionRéseau NGSI-v2 normalisé Exemple  
 
-Voici un exemple de NetworkConnection au format JSON normalisé. Ceci est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et retourne les données de contexte d'une entité individuelle.  
+Voici un exemple de NetworkConnection au format JSON comme normalisé. Ceci est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et retourne les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -550,9 +550,9 @@ Voici un exemple de NetworkConnection au format JSON normalisé. Ceci est compat
 ```  
 </details>  
 
-#### ConnexionRéseau NGSI-LD clés-valeurs Exemple  
+#### ConnexionRéseau clés-valeurs NGSI-LD Exemple  
 
-Voici un exemple de NetworkConnection au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et retourne les données de contexte d'une entité individuelle.  
+Voici un exemple de NetworkConnection au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -573,7 +573,7 @@ Voici un exemple de NetworkConnection au format JSON-LD sous forme de paires cl�
 
 #### ConnexionRéseau NGSI-LD exemple normalisé  
 
-Voici un exemple de NetworkConnection au format JSON-LD normalisé. Ceci est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+Voici un exemple de NetworkConnection au format JSON-LD normalisé. Ceci est compatible avec NGSI-LD lorsqu'on n'utilise pas d'options et retourne les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
