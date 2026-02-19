@@ -25,7 +25,7 @@ The following entity types are available:
 
 - [PowerSource](https://github.com/smart-data-models/dataModel.IT/blob/master/PowerSource/README.md). Power source of an Infrastructure Element.
 
-- [Service](https://github.com/smart-data-models/dataModel.IT/blob/master/Service/README.md). .
+- [Service](https://github.com/smart-data-models/dataModel.IT/blob/master/Service/README.md). Service deployed in the Cloud-Edge-IoT continuum, which is composed of a set of ServiceComponents running on top of InfrastructureElements.
 
 - [ServiceComponent](https://github.com/smart-data-models/dataModel.IT/blob/master/ServiceComponent/README.md). .
 
