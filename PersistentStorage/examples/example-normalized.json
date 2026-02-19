@@ -2,23 +2,23 @@
   "id": "Service:WebApp01:Component:Db:PersistentStorage:01",
   "type": "PersistentStorage",
   "mountPath": {
-    "type": "Property",
+    "type": "Text",
     "value": "/data/db"
   },
   "storageType": {
-    "type": "Property",
+    "type": "Text",
     "value": "Local"
   },
   "hostPath": {
-    "type": "Property",
+    "type": "Text",
     "value": "/var/mongo-persistence/data/db"
   },
   "accessMode": {
-    "type": "Property",
+    "type": "Text",
     "value": "ReadWriteOnce"
   },
   "size": {
-    "type": "Property",
+    "type": "Text",
     "value": 2048
   }
 }
