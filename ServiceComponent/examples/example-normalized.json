@@ -7,7 +7,7 @@
   },
   "service": {
     "type": "Text",
-    "object": "Service:WebApp01"
+    "value": "Service:WebApp01"
   },
   "serviceComponentStatus": {
     "type": "Text",
