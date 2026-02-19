@@ -10,11 +10,11 @@
     "value": "Web application deployed for testing purposes"
   },
   "serviceType": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "ServiceType:WebApplication"
   },
   "domainHandler": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "Domain:Cloud"
   },
   "actionType": {
