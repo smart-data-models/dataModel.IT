@@ -32,10 +32,10 @@ version: 0.0.1
 <sup><sub>[*] Si no hay un tipo en un atributo es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>  
 - `address[object]`: La dirección de correo  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: La localidad en la que está la dirección de la calle, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección de la calle, y que se encuentra en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
 	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que se encuentra en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
 	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionado por el gobierno local  
-	- `postOfficeBoxNumber[string]`: El número de casilla de correo para direcciones de casilla de correo. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postOfficeBoxNumber[string]`: El número de casilla de correo para las direcciones de casilla de correo. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: La dirección de la calle  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
 	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública  
@@ -43,14 +43,14 @@ version: 0.0.1
 - `areaServed[string]`: El área geográfica donde se proporciona un servicio o artículo ofrecido  . Model: [https://schema.org/Text](https://schema.org/Text)  
 - `currentPowerGeneratorPotential[number]`: Potencial actual del generador de energía.  
 - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizados  
-- `dateCreated[date-time]`: Marca de tiempo de creación de entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
+- `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
 - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  
 - `description[string]`: Una descripción de este artículo  
 - `greenEnergyRatio[number]`: Relación (entre 0 y 1) de energía verde utilizada por la fuente de energía.  
 - `id[*]`: Identificador único de la entidad  
-- `location[*]`: Referencia Geojson al elemento. Puede ser Punto, LineaString, Polígono, MultiPunto, MultiLineaString o MultiPolígono  
+- `location[*]`: Referencia Geojson del elemento. Puede ser Punto, LineaString, Polígono, MultiPunto, MultiLineaString o MultiPolígono  
 - `name[string]`: El nombre de este artículo  
-- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los Ids únicos del(los) propietario(s)  
+- `owner[array]`: Una lista que contiene una secuencia de caracteres codificados en JSON que hacen referencia a los Ids únicos del(los) propietario(s)  
 - `seeAlso[*]`: Lista de uri que apuntan a recursos adicionales sobre el artículo  
 - `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente o la URL del objeto de la fuente.  
 - `type[string]`: Tipo de entidad NGSI. Tiene que ser PowerSource  
@@ -67,13 +67,13 @@ Propiedades requeridas
 <!-- 40-NotesYaml -->
   
 
-Notas que aparecen al principio de la especificación  
+Notas que aparecen al comienzo de la especificación  
 <!-- /40-NotesYaml -->
   
 <!-- 50-DataModelHeader -->
   
 
-## Descripción del Modelo de Datos de propiedades  
+## Descripción del modelo de datos de propiedades  
 
 Ordenado alfabéticamente (haga clic para detalles)  
 <!-- /50-DataModelHeader -->
@@ -468,7 +468,7 @@ PowerSource:
 <!-- 70-MiddleNotes -->
   
 
-Notas que aparecen en medio de la especificación  
+Notas que aparecen en el medio de la especificación  
 <!-- /70-MiddleNotes -->
   
 <!-- 80-Examples -->
@@ -536,7 +536,7 @@ Aquí hay un ejemplo de un PowerSource en formato JSON normalizado. Esto es comp
 ```  
 </details>  
 
-#### Fuente de alimentación ejemplo de valores clave NGSI-LD  
+#### Fuente de alimentación clave-valor de ejemplo de NGSI-LD  
 
 Aquí hay un ejemplo de una PowerSource en formato JSON-LD como clave-valor. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
