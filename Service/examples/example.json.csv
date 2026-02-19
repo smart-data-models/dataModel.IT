@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "description_", "serviceType_", "actionType_", "hasOverlay_", "domainHandler_"
+"Service:WebApp01", "Service", "Web application number 1", "Web application deployed for testing purposes", "ServiceType:WebApplication", "Deployed", "True", "Domain:Cloud"
