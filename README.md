@@ -27,7 +27,7 @@ The following entity types are available:
 
 - [Service](https://github.com/smart-data-models/dataModel.IT/blob/master/Service/README.md). Service deployed in the Cloud-Edge-IoT continuum, which is composed of a set of ServiceComponents running on top of InfrastructureElements.
 
-- [ServiceComponent](https://github.com/smart-data-models/dataModel.IT/blob/master/ServiceComponent/README.md). .
+- [ServiceComponent](https://github.com/smart-data-models/dataModel.IT/blob/master/ServiceComponent/README.md). Component (packaged software, for instance, a container) of a service deployed in the Cloud-Edge-IoT continuum, which runs on top of an InfrastructureElement.
 
 - [ServiceType](https://github.com/smart-data-models/dataModel.IT/blob/master/ServiceType/README.md). .
 
