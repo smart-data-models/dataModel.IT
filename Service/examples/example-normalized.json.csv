@@ -1,0 +1,2 @@
+"id_", "type_", "name__type_", "name__value_", "description__type_", "description__value_", "serviceType__type_", "serviceType__value_", "domainHandler__type_", "domainHandler__value_", "actionType__type_", "actionType__value_", "hasOverlay__type_", "hasOverlay__value_"
+"Service:WebApp01", "Service", "Text", "Web application number 1", "Text", "Web application deployed for testing purposes", "Text", "ServiceType:WebApplication", "Text", "Domain:Cloud", "Text", "Deployed", "Boolean", "True"
