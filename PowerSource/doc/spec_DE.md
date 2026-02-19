@@ -11,7 +11,7 @@ Entität: PowerSource
 
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.IT/blob/master/PowerSource/LICENSE.md)  
 
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[Dokument wurde automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->
   
 <!-- 20-Description -->
@@ -38,21 +38,21 @@ version: 0.0.1
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
 	- `streetAddress[string]`: Die Straßenadresse  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-	- `streetNr[string]`: Nummer, die eine bestimmte Eigenschaft auf einer öffentlichen Straße identifiziert  
+	- `streetNr[string]`: Nummer, die ein bestimmtes Grundstück auf einer öffentlichen Straße identifiziert  
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  
-- `areaServed[string]`: Das geografische Gebiet, in dem ein Service oder ein angebotenes Produkt bereitgestellt wird  . Model: [https://schema.org/Text](https://schema.org/Text)  
-- `currentPowerGeneratorPotential[number]`: Potenzielles Aktuellleistungs-Generatorenpotential.  
+- `areaServed[string]`: Das geografische Gebiet, in dem ein Dienst oder ein angebotenes Produkt bereitgestellt wird  . Model: [https://schema.org/Text](https://schema.org/Text)  
+- `currentPowerGeneratorPotential[number]`: Aktuelles Potenzial des Stromgenerators.  
 - `dataProvider[string]`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Datenentität identifiziert  
-- `dateCreated[date-time]`: Zeitstempel für die Erstellung der Entität. Dieser wird in der Regel von der Speicherplattform zugewiesen  
+- `dateCreated[date-time]`: Zeitstempel für die Entitätserschaffung. Dieser wird in der Regel von der Speicherplattform zugewiesen  
 - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform zugewiesen  
 - `description[string]`: Eine Beschreibung dieses Artikels  
-- `greenEnergyRatio[number]`: Verhältnis (zwischen 0 und 1) der verwendeten grünen Energie durch die Stromquelle.  
+- `greenEnergyRatio[number]`: Verhältnis (zwischen 0 und 1) der verwendeten grünen Energie durch die Energiequelle.  
 - `id[*]`: Eindeutiger Identifikator der Entität  
 - `location[*]`: Geojson-Referenz zum Artikel. Es kann Punkt, Linienzug, Polygon, MultiPunkt, MultiLinienzug oder MultiPolygon sein  
 - `name[string]`: Der Name dieses Artikels  
-- `owner[array]`: Eine Liste, die eine JSON-kodierte Sequenz von Zeichen enthält, die auf die eindeutigen IDs des/die Eigentümer(s) verweisen  
-- `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen über das Element verweisen  
-- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angeben. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL zum Quellobjekt zu verwenden.  
+- `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenfolge enthält, die auf die eindeutigen IDs des/die Eigentümer(s) verweist  
+- `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen über den Artikel verweisen  
+- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angeben. Es wird empfohlen, den vollständig qualifizierten Domänennamen des Quellanbieters oder die URL zum Quellobjekt zu verwenden.  
 - `type[string]`: NGSI-Entitätentyp. Es muss PowerSource sein  
 <!-- /30-PropertiesList -->
   
@@ -474,9 +474,9 @@ Notizen, die mitten in der Spezifikation erscheinen
 <!-- 80-Examples -->
   
 
-## Beispiel-Nutzlasten  
+## Beispielnutzlasten  
 
-#### Stromquelle NGSI-v2 Schlüssel-Werte Beispiel  
+#### Stromquelle NGSI-v2 Schlüssel-Wert-Beispiel  
 
 Hier ist ein Beispiel für eine PowerSource im JSON-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und die Kontextdaten einer einzelnen Entität zurückgibt.  
 <details><summary><strong>show/hide example</strong></summary>    
