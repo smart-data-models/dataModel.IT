@@ -12,6 +12,7 @@
         "PowerSource": "https://smartdatamodels.org/dataModel.IT/PowerSource",
         "Service": "https://smartdatamodels.org/dataModel.IT/Service",
         "ServiceComponent": "https://smartdatamodels.org/dataModel.IT/ServiceComponent",
+        "ServiceType": "https://smartdatamodels.org/dataModel.IT/ServiceType",
         "accessMode": "https://smartdatamodels.org/dataModel.IT/accessMode",
         "actionType": "https://smartdatamodels.org/dataModel.IT/actionType",
         "address": "https://smartdatamodels.org/address",
@@ -84,6 +85,7 @@
         "isEntrypoint": "https://smartdatamodels.org/dataModel.IT/isEntrypoint",
         "isJob": "https://smartdatamodels.org/dataModel.IT/isJob",
         "key": "https://uri.etsi.org/ngsi-ld/hasKey",
+        "license": "https://smartdatamodels.org/dataModel.IT/license",
         "linkFrom": "https://smartdatamodels.org/dataModel.IT/linkFrom",
         "linkTo": "https://smartdatamodels.org/dataModel.IT/linkTo",
         "location": "https://uri.etsi.org/ngsi-ld/location",
@@ -136,6 +138,7 @@
         "type": "@type",
         "url": "https://smartdatamodels.org/url",
         "value": "https://uri.etsi.org/ngsi-ld/hasValue",
-        "version": "https://smartdatamodels.org/dataModel.IT/version"
+        "version": "https://smartdatamodels.org/dataModel.IT/version",
+        "webPage": "https://smartdatamodels.org/dataModel.IT/webPage"
     }
 }
