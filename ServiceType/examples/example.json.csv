@@ -1,0 +1,2 @@
+"id_", "type_", "name_", "description_", "webPage_", "license_"
+"urn:ngsi-ld:ServiceType:Orion-LD", "ServiceType", "Orion-LD", "Context Broker and CEF building block for context data management which supports both the NGSI-LD and the NGSI-v2 APIs", "https://github.com/FIWARE/context.Orion-LD", "AGPL-3.0"
