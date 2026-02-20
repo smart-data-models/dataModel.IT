@@ -29,11 +29,11 @@ version: 0.0.1
 ## Liste der Eigenschaften  
 
 
-<sup><sub>[*] Wenn in einem Attribut kein Typ angegeben ist, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben könnte</sub></sup>  
+<sup><sub>[*] Wenn in einem Attribut kein Typ angegeben ist, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>  
 - `address[object]`: Die Postadresse  . Model: [https://schema.org/address](https://schema.org/address)  
 	- `addressCountry[string]`: Das Land. Zum Beispiel Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
 	- `addressLocality[string]`: Die Ortschaft, in der sich die Straßenadresse befindet und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: Die Region, in der sich die Ortschaft befindet, und die im Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `addressRegion[string]`: Die Region, in der sich die Ortschaft befindet und die im Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
 	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird  
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
@@ -47,24 +47,24 @@ version: 0.0.1
 - `currentMemoryUsage[number]`: Aktueller Speicherbedarf des Komponenten.  
 - `dataProvider[string]`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Datenentität identifiziert  
 - `dateCreated[date-time]`: Zeitstempel für die Erstellung der Entität. Dieser wird in der Regel von der Speicherplattform zugewiesen  
-- `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  
+- `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform zugewiesen  
 - `description[string]`: Eine Beschreibung dieses Artikels  
-- `envVars[array]`: Umweltvariablen (im Schlüssel-Wert-Format), die zum Ausführen der Komponente benötigt werden.  
-- `id[*]`: Eindeutige Kennung der Entität  
-- `infrastructureElement[string]`: Infrastrukturelement, in dem die Komponente bereitgestellt wurde.  
-- `infrastructureElementRequirements[string]`: Anforderungen an die Infrastruktur (z. B. RAM, CPU, ...), die zum Ausführen des Komponenten erforderlich sind.  
-- `isJob[boolean]`: Legt fest, ob die Komponente als Job bereitgestellt wird: eine einmalige Aufgabe, die bis zum Abschluss ausgeführt wird und dann stoppt.  
-- `location[*]`: Geojson-Referenz zum Artikel. Es kann Punkt, Linienzug, Polygon, MultiPunkt, MultiLinienzug oder MultiPolygon sein  
-- `name[string]`: Der Name dieses Gegenstands  
-- `networkPorts[array]`: Netzwerk-Ports, die von der Komponente exponiert werden.  
-- `overlayNetworkIP[string]`: IP-Adresse, die dem Komponenten im Netzwerk-Overlay zugewiesen wird, das alle Komponenten desselben Dienstes verbindet.  
-- `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenfolge enthält, welche die eindeutigen IDs der Eigentümer referenziert.  
-- `persistentStorage[array]`: Anforderungen an persistenten Speicher, die für den Betrieb der Komponente benötigt werden.  
+- `envVars[array]`: Umgebungsvariablen (im Schlüssel-Wert-Format), die zum Ausführen der Komponente benötigt werden.  
+- `id[*]`: Eindeutiger Identifikator der Entität  
+- `infrastructureElement[string]`: Infrastruktur-Element, in dem die Komponente bereitgestellt wurde.  
+- `infrastructureElementRequirements[string]`: Anforderungen an die Infrastruktur (z. B. RAM, CPU, ...) die zum Betreiben des Komponenten benötigt werden.  
+- `isJob[boolean]`: Definiert, ob die Komponente als Auftrag bereitgestellt wird: eine einmalige Aufgabe, die bis zum Abschluss ausgeführt und dann gestoppt wird.  
+- `location[*]`: Geojson-Verweis auf das Element. Es kann Punkt, Linienzug, Polygon, MultiPunkt, MultiLinienzug oder MultiPolygon sein  
+- `name[string]`: Der Name dieses Artikels  
+- `networkPorts[array]`: Netzwerkports, die von der Komponente freigegeben werden.  
+- `overlayNetworkIP[string]`: IP-Adresse, die dem Komponenten im Netzwerk-Overlay zugewiesen ist, das alle Komponenten desselben Dienstes verbindet.  
+- `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenfolge enthält, die auf die eindeutigen IDs der Besitzer(n) verweist  
+- `persistentStorage[array]`: Anforderungen an den persistenten Speicher, die zum Ausführen der Komponente erforderlich sind.  
 - `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen über den Artikel verweisen  
 - `service[string]`: Dienst, zu dem die Komponente gehört.  
-- `serviceComponentStatus[string]`: Aktueller Status der Komponente. Enum: 'Fehlgeschlagen', 'Abgeschlossen', 'Lokalisierung', 'Migration', 'Entfernung', 'Wird ausgeführt  
-- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angeben. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellenanbieters oder die URL zum Quellobjekt zu verwenden  
-- `type[string]`: NGSI-Entitätstyp. Es muss ServiceComponent sein.  
+- `serviceComponentStatus[string]`: Aktueller Status des Komponenten. Enum: 'Fehlgeschlagen', 'Abgeschlossen', 'Ortung', 'Migration', 'Entfernen', 'Ausführen', 'Starten'  
+- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angeben. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellenanbieters oder die URL zum Quellobjekt zu verwenden.  
+- `type[string]`: NGSI-Entitätentyp. Es muss ServiceComponent sein  
 <!-- /30-PropertiesList -->
   
 <!-- 35-RequiredProperties -->
@@ -90,9 +90,9 @@ Anmerkungen, die am Anfang der Spezifikation erscheinen
 <!-- 50-DataModelHeader -->
   
 
-## Datenmodellbeschreibung der Eigenschaften  
+## Datenmodellbeschreibung von Eigenschaften  
 
-Alphabetisch sortiert (für Details klicken)  
+Nach dem Alphabet sortiert (klicken für Details)  
 <!-- /50-DataModelHeader -->
   
 <!-- 60-ModelYaml -->
@@ -615,11 +615,11 @@ Notizen, die mitten in der Spezifikation erscheinen
 <!-- 80-Examples -->
   
 
-## Beispiel-Payloads  
+## Beispiel-Nutzlasten  
 
-#### Servicekomponente NGSI-v2 Schlüssel-Werte-Beispiel  
+#### ServiceComponent NGSI-v2 Schlüssel-Werte Beispiel  
 
-Hier ist ein Beispiel für ein ServiceComponent im JSON-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und es die Kontextdaten einer einzelnen Entität zurückgibt.  
+Hier ist ein Beispiel für ein ServiceComponent im JSON-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und die Kontextdaten einer einzelnen Entität zurückgibt.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -668,7 +668,7 @@ Hier ist ein Beispiel für ein ServiceComponent im JSON-Format als Schlüssel-We
 ```  
 </details>  
 
-#### Dienstkomponente NGSI-v2 normalisiertes Beispiel  
+#### ServiceComponent NGSI-v2 normalisiertes Beispiel  
 
 Hier ist ein Beispiel für ein ServiceComponent im JSON-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und es die Kontextdaten einer einzelnen Entität zurückgibt.  
 <details><summary><strong>show/hide example</strong></summary>    
@@ -758,9 +758,9 @@ Hier ist ein Beispiel für ein ServiceComponent im JSON-Format als normalisiert.
 ```  
 </details>  
 
-#### Dienstkomponente NGSI-LD Schlüssel-Werte Beispiel  
+#### Dienstkomponente NGSI-LD Schlüsselwertbeispiel  
 
-Hier ist ein Beispiel für ein ServiceComponent im JSON-LD-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und die Kontextdaten einer einzelnen Entität zurückgibt.  
+Hier ist ein Beispiel für ein ServiceComponent im JSON-LD-Format als Schlüssel-Werte. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und die Kontextdaten einer einzelnen Entität zurückgegeben werden.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
@@ -812,9 +812,9 @@ Hier ist ein Beispiel für ein ServiceComponent im JSON-LD-Format als Schlüssel
 ```  
 </details>  
 
-#### Service-Komponente NGSI-LD normalisiertes Beispiel  
+#### Dienstkomponente NGSI-LD normalisiertes Beispiel  
 
-Hier ist ein Beispiel einer normalisierten ServiceComponent im JSON-LD-Format. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen genutzt werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein ServiceComponent im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und es die Kontextdaten einer einzelnen Entität zurückgibt.  
 <details><summary><strong>show/hide example</strong></summary>    
 
 ```json  
