@@ -1,0 +1,2 @@
+"id_", "type_", "name__type_", "name__value_", "description__type_", "description__value_", "webPage__type_", "webPage__value_", "license__type_", "license__value_", "@context__0_"
+"urn:ngsi-ld:ServiceType:Orion-LD", "ServiceType", "Property", "Orion-LD", "Property", "Context Broker and CEF building block for context data management which supports both the NGSI-LD and the NGSI-v2 APIs", "Property", "https://github.com/FIWARE/context.Orion-LD", "Property", "AGPL-3.0", "https://smartdatamodels.org/context.jsonld"
