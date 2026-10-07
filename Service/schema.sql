@@ -1,8 +1,8 @@
 /* (Beta) Export of data model Service of the subject dataModel.IT for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE actionType_type AS ENUM ('Deploying', 'Deployed', 'Destroying', 'Finished', 'Handled');
+CREATE TYPE Service_actionType_type AS ENUM ('Deploying', 'Deployed', 'Destroying', 'Finished', 'Handled');
 CREATE TYPE Service_type AS ENUM ('Service');
 CREATE TABLE Service (
-  "actionType" actionType_type,
+  "actionType" Service_actionType_type,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
