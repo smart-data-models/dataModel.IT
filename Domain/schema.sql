@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Domain of the subject dataModel.IT for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE domainStatus_type AS ENUM ('Preliminary', 'Functional', 'Removed', 'Untrusted');
+CREATE TYPE Domain_domainStatus_type AS ENUM ('Preliminary', 'Functional', 'Removed', 'Untrusted');
 CREATE TYPE Domain_type AS ENUM ('Domain');
 CREATE TABLE Domain (
   "address" JSON,
@@ -9,7 +9,7 @@ CREATE TABLE Domain (
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
   "description" TEXT,
-  "domainStatus" domainStatus_type,
+  "domainStatus" Domain_domainStatus_type,
   "id" TEXT PRIMARY KEY,
   "isEntrypoint" BOOLEAN,
   "location" JSON,
