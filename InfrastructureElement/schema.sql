@@ -1,10 +1,10 @@
 /* (Beta) Export of data model InfrastructureElement of the subject dataModel.IT for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE containerTechnology_type AS ENUM ('Kubernetes', 'Docker', 'containerd', 'Podman', 'iSulad');
-CREATE TYPE cpuArchitecture_type AS ENUM ('AMD64', 'ARM64', 'ARM32', 'MIPS64LE', 'PPC64LE', 'RISC-V', 'S390X');
-CREATE TYPE diskType_type AS ENUM ('HDD', 'SSD');
-CREATE TYPE infrastructureElementStatus_type AS ENUM ('Disabled', 'Insecure', 'Maintenance', 'Overloaded', 'Ready', 'Untrusted');
-CREATE TYPE infrastructureElementTier_type AS ENUM ('Cloud', 'Edge', 'FarEdge', 'IoT', 'CloudOnPremises');
-CREATE TYPE operatingSystem_type AS ENUM ('Linux', 'macOS', 'Windows');
+CREATE TYPE InfrastructureElement_containerTechnology_type AS ENUM ('Kubernetes', 'Docker', 'containerd', 'Podman', 'iSulad');
+CREATE TYPE InfrastructureElement_cpuArchitecture_type AS ENUM ('AMD64', 'ARM64', 'ARM32', 'MIPS64LE', 'PPC64LE', 'RISC-V', 'S390X');
+CREATE TYPE InfrastructureElement_diskType_type AS ENUM ('HDD', 'SSD');
+CREATE TYPE InfrastructureElement_infrastructureElementStatus_type AS ENUM ('Disabled', 'Insecure', 'Maintenance', 'Overloaded', 'Ready', 'Untrusted');
+CREATE TYPE InfrastructureElement_infrastructureElementTier_type AS ENUM ('Cloud', 'Edge', 'FarEdge', 'IoT', 'CloudOnPremises');
+CREATE TYPE InfrastructureElement_operatingSystem_type AS ENUM ('Linux', 'macOS', 'Windows');
 CREATE TYPE InfrastructureElement_type AS ENUM ('InfrastructureElement');
 CREATE TABLE InfrastructureElement (
   "address" JSON,
@@ -14,9 +14,9 @@ CREATE TABLE InfrastructureElement (
   "availableRam" NUMERIC,
   "avgPowerConsumption" TEXT,
   "category" JSON,
-  "containerTechnology" containerTechnology_type,
+  "containerTechnology" InfrastructureElement_containerTechnology_type,
   "controlledProperty" JSON,
-  "cpuArchitecture" cpuArchitecture_type,
+  "cpuArchitecture" InfrastructureElement_cpuArchitecture_type,
   "cpuCores" NUMERIC,
   "cpuFreqMax" NUMERIC,
   "currentCpuUsage" TEXT,
@@ -31,15 +31,15 @@ CREATE TABLE InfrastructureElement (
   "description" TEXT,
   "deviceCategory" JSON,
   "diskCapacity" NUMERIC,
-  "diskType" diskType_type,
+  "diskType" InfrastructureElement_diskType_type,
   "domain" TEXT,
   "energyEfficiencyRatio" TEXT,
   "gpu" BOOLEAN,
   "gpuMemory" NUMERIC,
   "hostname" TEXT,
   "id" TEXT PRIMARY KEY,
-  "infrastructureElementStatus" infrastructureElementStatus_type,
-  "infrastructureElementTier" infrastructureElementTier_type,
+  "infrastructureElementStatus" InfrastructureElement_infrastructureElementStatus_type,
+  "infrastructureElementTier" InfrastructureElement_infrastructureElementTier_type,
   "internalIpAddress" TEXT,
   "location" JSON,
   "lowLevelOrchestrator" TEXT,
@@ -50,7 +50,7 @@ CREATE TABLE InfrastructureElement (
   "netSpeedUp" NUMERIC,
   "netTrafficDown" NUMERIC,
   "netTrafficUp" NUMERIC,
-  "operatingSystem" operatingSystem_type,
+  "operatingSystem" InfrastructureElement_operatingSystem_type,
   "owner" JSON,
   "powerSource" TEXT,
   "ramCapacity" NUMERIC,
