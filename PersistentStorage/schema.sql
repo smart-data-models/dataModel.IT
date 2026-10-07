@@ -1,9 +1,9 @@
 /* (Beta) Export of data model PersistentStorage of the subject dataModel.IT for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE accessMode_type AS ENUM ('ReadWriteOnce', 'ReadOnlyMany', 'ReadWriteMany');
-CREATE TYPE storageType_type AS ENUM ('External', 'Local');
+CREATE TYPE PersistentStorage_accessMode_type AS ENUM ('ReadWriteOnce', 'ReadOnlyMany', 'ReadWriteMany');
+CREATE TYPE PersistentStorage_storageType_type AS ENUM ('External', 'Local');
 CREATE TYPE PersistentStorage_type AS ENUM ('PersistentStorage');
 CREATE TABLE PersistentStorage (
-  "accessMode" accessMode_type,
+  "accessMode" PersistentStorage_accessMode_type,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
@@ -20,6 +20,6 @@ CREATE TABLE PersistentStorage (
   "seeAlso" JSON,
   "size" NUMERIC,
   "source" TEXT,
-  "storageType" storageType_type,
+  "storageType" PersistentStorage_storageType_type,
   "type" PersistentStorage_type
 );
